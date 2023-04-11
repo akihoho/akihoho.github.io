@@ -1,0 +1,252 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*全称セレクターに対して基本の値を打ち消す為にデフォルト設定にしておくとよい*/
+html{
+  font-size: 62.5%;
+  background-color: #F3F5FB;
+  width: 100%;
+}
+body{
+  width: 100%;
+  font-size: 1.8rem;
+  color: #18212B;
+  line-height: 1.5;
+  font-family: 'Shippori Mincho', serif;
+  overflow-x: hidden;
+}
+img{
+  max-width: 100%;
+  vertical-align: bottom;
+}/*縦方向をbottom.デフォルトで入れとく方がよい*/
+a{
+  text-decoration: none;
+  color:inherit;
+}
+ol,
+ul{
+  list-style-type: none;
+}
+
+/* ----------------------共通---------------------- */
+.inner{
+  max-width: 1200px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+span {
+  display: inline-block;
+}
+.nav-inner{
+  margin: 0 auto;
+}
+
+/*要素をfade inする(全ページ共通タグ)*/
+.fadein {
+  opacity : 0;
+  transform : translate(0, 15px); /*要素の待機位置*/
+  transition:all 1.5s; /*fade inの速度調整*/
+}
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+
+
+.w768{
+  display: none;
+}
+.w700{
+display: none;
+}
+
+/* サイドのインスタと予約固定リンク------------------------*/
+.link-button{
+  position: fixed;
+  width: 55px;
+  right:20px;
+  bottom: 20px;
+  z-index: 900;
+}
+.link-button:before {
+  display: block;
+  /* position: absolute; */
+}
+@media screen and ( max-width:768px ){
+  .link-button {
+    opacity: 0;
+    position: fixed;
+    width: 55px;
+    right: -200px;
+    bottom: 20px;
+    z-index: 1500;
+    transition: 0.4s;
+  }
+  .open .link-button {
+    right: 20px;
+    opacity: 1;
+    transition: 0.4s 0.4s;
+}
+}
+
+/* footer-------------------------*/
+
+/*footerまでスクロールしたら消す*/
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.footer {
+  width: 100%;
+  background: #18212B;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 ;
+}
+/* コピーライト以外を並べる-------------------*/
+.footer-wrapper {
+  width: 98%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+/* ロゴと予約ボタンのwrapper-------------------*/
+.footer-btn-wrapper-01 {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo {
+  width: 100px;
+  margin-left: 13%;
+}
+.footer-btn-reservation {
+  min-width: 140px;
+}
+/* snsアイコンとtopボタンのwrapper-------------------*/
+.footer-btn-wrapper-02 {
+  display: flex;
+  gap: 40px;
+}
+.sns-icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.sns-icon-item {
+  width: 45px;
+  height: 45px;
+}
+/* snsアイコンの真ん中の縦線-------------------*/
+.footer-line-icon {
+  position: relative;
+}
+.footer-line-icon::before {
+  content: "";
+  display:inline-block;
+  width: 1px;
+  height: 100%;
+  background-color: #ffffff; /*縦線の色*/
+  position: absolute;
+  top: 0;
+  left: -20px;  /*縦線の位置*/
+}
+.footer-btn-top {
+  width: 45px;
+}
+/* コピーライト-------------------*/
+.footer-copy {
+  color: #D8E9FC;
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer-copy p {
+  font-size: 11px;
+}
+    @media screen and ( max-width:768px ) {
+    .footer-wrapper {
+      flex-direction: column;
+    }
+    .footer-btn-wrapper-01 {
+      width: 100%;
+      margin: 20px 20px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .footer-logo {
+      width: 100px;
+    }
+    .footer-btn-reservation {
+      width: 170px;
+    }
+    .footer-btn-top {
+      position: absolute;
+      right: 25px;
+    }
+    }
+    @media screen and ( max-width:390px ) {
+    .footer-wrapper {
+      flex-direction: column;
+    }
+    .footer-logo {
+      width: 80px;
+    }
+    .footer-btn-reservation {
+      width: 140px;
+    }
+    .sns-icon-item {
+      width: 40px;
+      height: 40px;
+    }
+    .footer-btn-top {
+      width: 40px;
+    }
+    }
+
+/**loader***/
+#loading {
+  width: 100vw;
+  height: 100vh;
+  /* transition: all 2s; */
+  background-color:#ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner{
+  max-width: 550px;
+  height: auto;
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s 5s ease-out;
+}
+.from-local{
+  opacity: 0;
+  visibility: hidden;
+}
+
+/******* YouTube ************/
+.youtube {
+  width: 65%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 10%;
+}
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+}

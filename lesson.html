@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="./assets/js/jquery-3.6.3.min.js" defer></script>
+<script src="./assets/js/script.js" defer></script>
+<script src="./assets/lib/slick/slick.js" defer></script>
+<script src="./assets/js/slick.min.js" defer></script>
+<script src="./assets/js/slick-slider.js" defer></script>
+
+<script src="./assets/js/jquery-modal-video.min.js" defer></script>
+<script src="./assets/js/init.js" defer></script>
+
+
+<!-- slick-slide -->
+<link href="./assets/css/slick.css" rel="stylesheet" type="text/css">
+<link href="./assets/css/slick-theme.css" rel="stylesheet" type="text/css">
+
+<!-- modal-video -->
+<link rel="stylesheet" href="./assets/css/modal-video.min.css">
+<!-- favicon-->
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="android-touch-icon.png" sizes="192x192">
+
+
+<title>LESSON</title>
+<link href="./assets/css/normalize.css" rel="stylesheet">
+<link href="./assets/css/lesson.css" rel="stylesheet">
+<link href="./assets/css/nav.css" rel="stylesheet">
+<link href="./assets/css/common.css" rel="stylesheet">
+
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+
+<!-- ヘッダー固定ナブ -->
+<body>
+  
+  <div class="all-wrapper">
+    <div class="trigger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="trigger-close">close</span>
+      <span class="trigger-menu">menu</span>
+    </div>
+  
+    <header class="header">
+      <div class="nav-inner">
+        <div class="header-logo">
+          <a href="index.html">
+            <picture>
+                <source srcset="./assets/images/common/logo_black.svg" media="( min-width:767px )">
+                <source srcset="./assets/images/common/logo_horizontal.svg" media="( max-width:768px )">
+                <img src="./assets/images/common/logo_horizontal.svg" alt="beauty cooking salon yuロゴ">
+            </picture>
+          </a>
+        </div>
+      <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Top<span>トップ</span></a></li>
+            <li><a href="about.html">About<span>講師プロフィール、クッキングサロンについて</span></a></li>
+            <li><a href="lesson.html">Lesson<span>レッスンについて</span></a></li>
+            <li><a href="gallery.html">Gallery<span>ギャラリー (レッスンの様子など)</span></a></li>
+            <li><a href="reservation.html">Reservation<span>ご予約</span></a></li>
+            <li class="nav-contact"><a href="contact.html">Contact<span>お問い合わせ</span></a></li>
+          </ul>
+        </nav>
+      </div><!-- nav-inner -->
+    </header>
+  
+  <main>
+<!-- 固定リンクボタン -->
+    <div class="link-button">
+      <a href="#instagram"><img class="insta-icon" src="assets/images/common/insta_icon.svg" alt="インスタグラムアイコン"></a>
+      <a href="reservation.html"><img class="reserve-icon" src="assets/images/common/reserve_button_kotei.svg" alt="予約ボタン"></a> 
+    </div>
+
+    <!-- レッスンメインビジュ画像 -->
+    <div class="lesson-main-visual">
+      <div class="lesson-title">
+        <h1>Lesson</h1>
+      </div>
+      <picture>
+        <source srcset="./assets/images/lesson/lesson_top.jpg" media="( min-width:769px )">
+        <source srcset="./assets/images/lesson/lesson_main_768px.jpg" media="(max-width:768px )">
+        <img src="./assets/images/lesson/lesson_main_390px.jpg" alt="スペシャリテプレートの写真">
+      </picture>
+    </div><!-- reservation-main-visual -->
+
+
+    <!-- レッスン　introのメッセージ -->
+  <!-- <div class="fade"> -->
+  <section class="intro-message">
+    <div class="lesson-top-title fadein" >
+      <h2>四季折々のお料理を、<br class="w700"><span>六甲の澄んだ景色の中で</span><br>
+        ワイン片手に楽しく学べる<br>
+        オトナの女性向け<span>クッキングサロンです</span></h2>
+    </div><!-- lesson-top -->
+    <p class="lesson-top-message">
+      デモンストレーション型の<span>レッスン形式で、</span>旬の食材を使い<span>栄養面</span>などを考えた美容にも良い<span>コース</span>料理を1コースあたり5品ほどのお料理をお楽しみいただけ<span>ます。</span></p>
+</section>
+<!-- </div> -->
+      <!-- レッスン　サイト内リンクmenu -->
+
+
+  <section>
+    <div class="menu-image-container">
+      <img src="./assets/images/lesson/menu_bg01.png" alt="メニューの紙">
+      <ul class="menu-link-button">
+        <p class="menu">Menu</p>
+        <li><a href="./lesson.html#lesson-info-container">基本情報</a></li>
+        <li><a href="./lesson.html#lesson-price-container">料金について</a></li>
+        <li><a href="./lesson.html#access-wrapper">サロンの場所</a></li>
+        <li><a href="./lesson.html#slide-lesson">レッスンの流れ</a></li>
+        <p class="menu-rose-icon"><img src="./assets/images/common/rose_icon.svg" alt="バラのアイコン"></img></p>
+      </ul><!-- menu-link -->
+    </div><!-- menu-image-container -->
+  </section>
+
+      <!-- レッスン基本情報 -->
+    <div class="lesson-image-tab">
+      <img src="./assets/images/lesson/lesson-img-768.png" alt="お料理写真">
+    </div>
+  <section id="lesson-info-container">
+    <div class="leeson-info-goldline">
+      <div class="lesson-info-wrapper">
+        <h2>レッスンの基本情報</h2>
+        <div class="lesson-text-img-wrapper">
+        <div class="text-info">
+          <dl class="text-list">
+            <div>
+            <dt>一回完結型</dt>
+            <dd>デモンストレーション型レッスン<br>
+              講師の手元や手順を<span>見ていただきながら、</span><br>
+              学んでいただくスタイル。<span>動画での撮影も可。</span>
+              </dd>
+            </div>
+            <div>
+              <dt>時間</dt>
+              <dd class="text-11-14">11:00 ～ 14:00&#8195;約３時間<br>
+                <span class="text-small-1">(終了時間はその都度前後する<span>場合がございます。)</span></span>
+              </dd>
+              </div>
+              <div>
+                <dt>持ち物</dt>
+                <dd>メモする際の筆記用具や撮影道具は、<br>
+                  必要な場合はお持ちください。<br>
+                  タオルやエプロン等は、ご持参の必要はございません。
+                </dd>
+                </div>
+                <div>
+                  <dt>定員</dt>
+                  <dd class="text-3-5">最低３名 ~ 最大５名</dd>
+                  </div>
+                  <div>
+                    <dt>開催日程</dt>
+                    <dd class="text-4-5">1年に4～5回&#8195;開催予定<br>
+                    <span class="text-small-1">( 2か月に1回のペースで季節に応じた料理 )<br>
+                    ※一度お越しいただいたお客様には、<br>次回のレッスン開校日程を<span>ご連絡いたします</span></span>
+                    </dd>
+                    </div>
+          </dl><!-- text-list -->
+          </div><!-- info-text -->
+          <img class="fadein" src="./assets/images/lesson/lesson_info_image.png" alt="レッスン終わりの乾杯">
+        </div><!-- lesson-text-img-wrapper -->
+      </div><!-- lesson-info-wrapper -->
+    </div><!-- leeson-info-goldline -->
+  </section><!-- lesson-info-container -->
+
+
+    <!-- レッスン 料金について-->
+<section id="lesson-price-container">
+  <div class="lesson-wrap">
+    <div class="lesson-price-wrapper">
+
+      <div class="price-wrapper">
+        <div class="price-title">
+          <img class="rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+          <h3 class="content-salon-title-head">料金について</h3>
+        </div><!-- price-title -->
+        <p>レッスン1回につき￥6,000- ( 税込 )<br>
+          <span class="price-small-text">レシピ ( ５品 ) 、乾杯ドリンク、お土産付き</span><br><br>
+          <span class="price-small-text">入会費不要・都度払いの形式をとっております<br>
+          お好きな日程をご予約いただきお越しください</span>
+        </p>
+      </div><!-- price-wrapper -->
+
+    </div><!-- lesson-price-wrapper -->
+</div><!-- lesson-wrap -->
+</section><!-- lesson-price-container -->
+
+
+    <!-- レッスン アクセスついて-->
+    <section class="lesson-access-container">
+      <div id="access-wrapper">
+
+        <div class="access-text-wrapper">
+          <div class="access-title">
+            <img class="rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+            <h2 class="content-access-title-head">サロンの場所</h2>
+            <img class="content-access-sign" src="./assets/images/lesson/access_text_deco.svg" alt="access">
+          </div><!-- access-title" -->
+
+          <div class="access-text">
+            <h2 class="access-p">
+              公共交通機関でお越しの方<br>
+            </h2>
+              <P>
+                阪急六甲駅よりタクシーで7分<br>
+                神戸市バス六甲ケーブル下駅より徒歩6分
+              </p>
+              <br>
+            <h2 class="access-p">
+              お車でお越しの方<br>
+            </h2>
+              <p>
+                駐車場ございます。<br>
+                お問い合わせ下さい。<br>
+              </p>
+              <br>
+              <span class="small-text">※詳しい住所はご予約確定後にお知らせします。</span>
+            </div><!-- access-text -->
+        </div><!-- access-text-wrapper -->
+        <div class="access-illust-map fadein">
+          <img src="./assets/images/lesson/access_map.jpg" alt="アクセスのイラストマップ">
+        </div>
+        
+
+      </div><!-- access-wrapper -->
+    </section><!-- lesson-access-container -->
+
+
+      <!-- レッスンの流れ(slickスライダー部分)-->
+      <section id="slide-lesson"></section>
+      <div class="slider">
+        <div class="slide-item"><img src="./assets/images/slick_slider/lesson_am11.jpg" alt="11時"></div>
+        <div class="slide-item"><img src="./assets/images/slick_slider/lesson_am12.jpg" alt="12時"></div>
+        <div class="slide-item"><img src="./assets/images/slick_slider/lesson_pm13.jpg" alt="13時"></div>
+        <div class="slide-item"><img src="./assets/images/slick_slider/lesson_pm14.jpg" alt="14時"></div>
+      </div>
+
+      <div class="slider-mobile">
+        <div class="slide-item"><img src="./assets/images/slick_slider/lesson_am11_390.jpg" alt="11時"></div>
+        <div class="slide-item"><img src="./assets/images/slick_slider/lesson_am12_390.jpg" alt="12時"></div>
+        <div class="slide-item"><img src="./assets/images/slick_slider/lesson_pm13_390.jpg" alt="13時"></div>
+        <div class="slide-item"><img src="./assets/images/slick_slider/lesson_pm14_390.jpg" alt="14時"></div>
+      </div>
+    
+
+        <!-- レッスンの流れ(動画部分)-->
+        <section class="lesson-movie-container">
+      
+          <div class="movie-wrapper">
+            <img class="rose-icon2" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+            <h2 class="lesson-movie-title">動画でサロン体験</h2>
+    
+            <div class="youtube">
+              <a href="javascript:void(0);" data-video-id="XPBjcCSN5lc" class="js-modal-video">
+                <img src="./assets/images/movie/lesson-samune 5.svg" alt="レッスン動画" class="img-before">
+                <img src="./assets/images/movie/lesson_hover.svg" alt="再生" class="img-after">
+              </a>
+            </div>
+                
+        <div class="gallery-button">
+          <p class="movie-text">GALLERYではもっとサロンの雰囲気を<br>
+            ご体感いただけます。</p><br>
+          <a href="gallery.html" class="gallery-btn fadein">GALLERY</a>
+        </div><!-- gallery-button -->
+      
+      </div><!-- movie-wrapper -->
+    </section><!-- lesson-movie-container -->
+
+
+        <!-- インスタタグ紹介＆予約ボタン-->
+    <section class="insta-tag-reserve-container">
+
+      <div class="lesson-insta-tag-wrapper fadein">
+        <div class="insta-tag-img">
+          <img src="./assets/images/lesson/tag_us_on_instagram_bg.png" alt="インスタグラム参考画像">
+        </div><!-- insta-tag-img -->
+      </div><!-- lesson-insta-tag-wrapper -->
+    
+      <div class="lesson-insta-tag-wrapper-mobile fadein">
+        <div class="insta-tag-img-mobile">
+          <img src="./assets/images/lesson/tag_us_on_instagram_390.jpg" alt="インスタグラム参考画像">
+        </div><!-- insta-tag-img -->
+      </div><!-- lesson-insta-tag-wrapper -->
+
+
+      <div class="reserve-wrap">
+        <div class="reserve-wrapper">
+
+            <div class="reserve-title">
+              <img class="rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+              <h2 class="content-reserve-title-head">Reservation</h2>
+            </div><!-- reserve-title -->
+
+            <div class="reserve-button fadein">
+              <a href="reservation.html" class="reserve-btn">サロンのご予約</a>
+            </div><!-- reserve-button -->
+
+            <details class="accordion-004">
+              <summary>キャンセルに関して</summary>
+              <p class="cancel-red-text">当日キャンセルの場合は<br>
+                キャンセル料を頂戴しております。</p>
+              <p class="cancel-text">
+                キャンセルの場合は前日までに、<br>
+                ご連絡を頂くようお願い致します。<br>
+                キャンセル等のご連絡は<br><a href="contact.html" class="contact-btn">お問い合わせフォーム</a>よりお願いします。<br>
+              </p>
+          </details>
+
+          </div><!-- reserve-wrapper -->
+    </div><!-- reserve-wrap -->
+
+    
+  </section><!-- insta-tag-reserve-container -->
+
+
+  </main>
+
+  <!------------------- footer ----------------------->
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-btn-wrapper-01">
+        <img class="footer-logo" src="./assets/images/common/logo_white.svg" alt="ビューティークッキングサロンユウのロゴ">
+        <a class="footer-btn-reservation" href="reservation.html" >
+          <img src="./assets/images/common/reserve_button_footer.svg" alt="予約ボタン">
+        </a>
+      </div>
+      <div class="footer-btn-wrapper-02">
+        <div class="sns-icon-wrapper">
+          <a class="sns-icon-item" href="#instagram"><img src="./assets/images/common/insta_icon_footer.svg" alt="Instagramアイコン"></a>
+          <a class="sns-icon-item footer-line-icon" href="#line"><img src="./assets/images/common/line_icon_footer.svg" alt="LINEアイコン"></a> 
+        </div><!-- sns-icon -->
+        <a class="footer-btn-top" href="#">
+          <img src="./assets/images/common/link_to_top_button.svg" alt="トップへ戻る">
+        </a>
+      </div>
+    </div><!--footer-wrapper-->
+    <div class="footer-copy">
+      <p>
+        <small>&copy; 2023 All right reserved</small>
+      </p>
+    </div>
+  </footer>
+
+  </body>
+  </html>

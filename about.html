@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="./assets/js/jquery-3.6.3.min.js" defer></script>
+<script src="./assets/js/script.js" defer></script>
+
+<script src="./assets/js/jquery-modal-video.min.js" defer></script>
+<script src="./assets/js/init.js" defer></script>
+
+<!-- modal-video -->
+<link rel="stylesheet" href="./assets/css/modal-video.min.css">
+<!-- favicon-->
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="android-touch-icon.png" sizes="192x192">
+
+
+<title>ABOUT</title>
+<link href="./assets/css/normalize.css" rel="stylesheet">
+<!-- <link href="./assets/css/index.css" rel="stylesheet"> -->
+<link href="./assets/css/nav.css" rel="stylesheet">
+<link href="./assets/css/common.css" rel="stylesheet">
+<link href="./assets/css/about.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+
+
+<!-- ヘッダー固定ナブ -->
+<body>
+  <div class="all-wrapper">
+    <div class="trigger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="trigger-close">close</span>
+      <span class="trigger-menu">menu</span>
+    </div>
+  
+    <header class="header">
+      <div class="nav-inner">
+        <div class="header-logo">
+          <a href="index.html">
+          <picture>
+            <source srcset="./assets/images/common/logo_black.svg" media="( min-width:769px )">
+            <source srcset="./assets/images/common/logo_horizontal.svg" media="( max-width:768px )">
+            <img src="./assets/images/common/logo_horizontal.svg" alt="beauty cooking salon yuロゴ">
+          </picture>
+          </a>
+        </div>
+      <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Top<span>トップ</span></a></li>
+            <li><a href="about.html">About<span>講師プロフィール、クッキングサロンについて</span></a></li>
+            <li><a href="lesson.html">Lesson<span>レッスンについて</span></a></li>
+            <li><a href="gallery.html">Gallery<span>ギャラリー (レッスンの様子など)</span></a></li>
+            <li><a href="reservation.html">Reservation<span>ご予約</span></a></li>
+            <li class="nav-contact"><a href="contact.html">Contact<span>お問合せ</span></a></li>
+          </ul>
+        </nav>
+      </div><!-- nav-inner -->
+    </header>
+  
+<main>
+<!-- トップ画像-->
+  <div class="main-visual">
+    <div class="title">
+        <h1 class="about-title">About</h1>
+    </div><!-- title -->
+    <picture>
+      <source srcset="./assets/images/about/top_bg.jpg" media="( min-width:769px )">
+      <source srcset="./assets/images/about/about_main_768px.jpg" media="(max-width:768px )">
+      <!-- <source srcset="./assets/images/about/about_top_390.jpg" media="(max-width:390px )"> -->
+      <img src="./assets/images/about/about_top_390.jpg" alt="手紙の写真">
+    </picture>
+  </div><!-- main-visual -->
+
+<!-- 固定リンクボタン -->
+<div class="link-button">
+  <a href="#instagram"><img class="insta-icon" src="assets/images/common/insta_icon.svg" alt="インスタグラムアイコン"></a>
+  <a href="reservation.html"><img class="reserve-icon" src="assets/images/common/reserve_button_kotei.svg" alt="予約ボタン"></a> 
+</div>
+
+
+
+
+<!-- intro--->
+<section class="about-intro">
+    <h2 class="intro-title fadein">『拘りの食材で美しく』<br>
+        五感を満たすお料理とともに、<br class="w700">贅沢なひと時を
+    </h2>
+    <div class="intro-text">
+      <p>六甲山の麓でひっそりと開催している自宅でのクッキング<span>サロン。</span><br>
+          お料理を通して美をサポートしたい、そんな思いで添加物などは一切使用せず食材にこだわり、栄養面も考えたお料理をご提案しております。
+          本サロンは堅苦しいものではなく、お気軽に自然豊かな美しい景色と空間、お料理を楽しんでいただくサロンです。ホームパーティーにお呼ばれしたような感覚でご気軽にお越しください。</p>
+    </div>
+</section><!-- --intro-message-- -->
+
+<!--profile-->
+<section class="profile">
+  <div class="rose-title">
+    <img class="rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <h3 class=><span class="en">Profile</span><br><span class="ja">講師プロフィール</span></h3>
+  </div><!--rose-title-->
+
+  <div class="profile-1">
+    <div class="prof1-1">
+      <h3 class="prof-name fadein">Y U K O&#8195;<br class="br_name">H I S A N A G A<br>久永&#8195;優子</h3>
+      <p class="prof1-text">
+        Beauty cooking salon Yu 主宰。<br>
+        小・中学生の頃より、共働きの両親の代わりにしていた夕飯のお手伝いをきっかけに、昔から料理に魅せられてきました。いつしか料理教室をすることが夢となり、栄養士とフードスペシャリストの資格を取得後、減量専門の栄養士を経て2021年にBeauty cooking salon Yuを開業いたしました。<br>
+        <span>
+        もっと気軽に大好きなお料理を楽しんで頂きたい、お料理を学ぶだけでなくご参加頂く時間を楽しんで頂きたいと思い、教室ではなくサロンという形にいたしました。</span></p>
+    </div><!--prof1-1-->
+    <img class="prof1-img fadein" src="./assets/images/about/profile_1.jpg" alt="講師写真1">
+  </div><!-- profile-1 -->
+
+  <div class="profile-2">
+    <div class="prof2-1">
+      <img class="prof2-img fadein" src="./assets/images/about/profile_2.jpg" alt="講師写真2">
+      <div class="skill">
+        <img src="./assets/images/about/skill_bg.svg" alt="">
+      </div><!--skill-->
+
+    </div><!--prof2-1-->
+
+    <div class="prof2-2">
+      <p class="bcs-img fadein">
+        <img src="./assets/images/about/bcs.svg" alt="">
+      </p><!--bcs-img-->
+      <p class="prof2-text">
+        幼少期からの夢を叶えるべく、大手企業を退職し栄養士の資格取得のため大学へ再入学。再び学生となり、栄養士資格とフードスペシャリスト<span>を取得。</span><br>学生時代には、憧れの先生のお料理教室のアシスタントとして働き、教室の運営を<span>学ぶ。</span>
+      </p>
+      <div class="history">
+      </div><!--history-->
+
+    </div><!--prof2-2-->
+  </div><!-- profile-2 -->
+</section><!--profile-->
+
+<!--feature-->
+<section class="feature">
+  <div class="rose-title">
+    <img class="rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <h3><span class="en">Beauty Cooking Salon</span><br><span class="ja">ビューティークッキング<span>サロン</span></span></h3>
+  </div><!--rose-title-->
+
+
+    <div class="feature-1">
+      <div class="pic-wrap">
+        <img class="f1 fadein" src="./assets/images/about/feature_1.jpg" alt="デモンストレーションの様子">
+      </div><!--pic-wrap-->
+      <div class="text-wrap">
+        <!-- <img class="f1-bg" src="./assets/images/f1_bg.svg" alt=""> -->
+        <div class="f1-text">
+          <h3 class="feature-title">目で見て学ぶから、<br class="w768">全てがわかる</h3>
+          <p>お料理教室で担当するお料理が分担され、自分が作ってみたいお料理が作れなかったご経験はございませんか？<br><br>
+          お料理教室などのお手伝いをする中で、全てのお料理を学ぶ機会がほしいという声を耳にすることが多くありました。そのため、本サロンでの「レッスン」は目で見て学んでいただくデモンストレーション形式をとっております。<br><br>
+          デモンストレーション形式を取ることで、お出しするコースのお料理全てに触れていただけます。
+          </p>
+        </div><!--f1-text-->
+      </div>
+    </div><!--feature-1-->    
+
+    <div class="feature-2">
+      <div class="pic-wrap">
+        <img class="f2 fadein" src="./assets/images/about/feature_2.jpg" alt="ポテトサラダ">
+      </div>
+      <div class="text-wrap">
+        <!-- <img class="f2-bg" src="./assets/images/f2_bg.svg" alt=""> -->
+        <div class="f2-text">
+          <h3 class="feature-title">
+            四季折々のお料理で、<br>
+            &#8195;&#8195;&#8195;来るたび違う体験を</h3>
+          <p>
+          年に約4回（クリスマスなどのイベントに合わせて特別開催も）開催する本サロンは季節に合わせたお料理で、お越し頂く度に異なる体験をお届けいたします。「おしゃれなおもてなし料理は難しく、手間がかかる」と思われる方も多くいらっしゃると思います。ですが、簡単におしゃれなおもてなし料理は作ることができるのです。<br><br>
+          本サロンでは、このように美容にもいい食材を使い、お家でも簡単に作れる創作料理を提案しております。
+          </p>
+        </div><!--f2-text-->
+      </div>
+    </div><!--feature-2-->    
+
+    <div class="feature-3">
+      <div class="pic-wrap">
+        <img class="f3 fadein" src="./assets/images/about/feature_3.jpg" alt="テラスからの景色">
+      </div>  
+      <div class="text-wrap">
+        <!-- <img class="f3-bg" src="./assets/images/f3_bg.svg" alt=""> -->
+        <div class="f3-text">
+          <h3 class="feature-title">
+            六甲山のふもとにある、<br class="w768">神戸を一望できる<br class="w700">
+            絶好のロケーション</h3>
+          <p>神戸のシンボルでもある六甲山。<br>
+            Beauty cooking salon Yuは六甲山のふもとに位置し、自然豊かな景色と神戸の街を一望できます。澄んだ空気に包まれ、日頃の疲れを癒しにいらしてください。<br>
+            <span>
+            ※自宅での教室ですので場所の明記は避けさせていただいております。ご予約いただいた方には、改めて詳しい住所をお伝えいたします。</span>
+          </p>
+        </div><!--f3-text-->
+        </div>
+    </div><!--feature-3-->
+
+    <div class="last-message">
+      <div class="rose-title">
+        <img class="l-gold" src="./assets/images/about/gold_line_message.svg" alt="">
+        <h3><span class="en">Message</span><br><span class="ja">メッセージ</span></h3>
+        <img class="l-gold" src="./assets/images/about/gold_line_message.svg" alt="">
+      </div>
+      <p class="last-message-p">エプロンやタオルなどの持ち物は一切必要ございません。<br>
+        ご参加いただく皆様は、ゲストとしてゆったり流れる時間をお楽しみいただくだけでも大丈夫です。<br><br>
+        レッスンとしてお料理を学びに来られるだけでなく、お友達と一緒にプチ旅行感覚でお越しいただくのも大歓迎です。<br><br>
+        様々な目的に合わせてお楽しみいただけるような新しいクッキングサロンです。澄んだ空気に包まれ美しい自然を臨みながら、ゆったり流れる時間を美味しいお料理と共に楽しみま<span>せんか？</span></p>
+        <div class="btn">
+          <a href="./lesson.html" class="a-btn">レッスンについて</a>
+        </div><!-- btn -->
+    </div><!--last-message-->
+
+</section><!--feature-->
+
+<!--movie-->
+      <div class="movie-wrap">
+        <div class="rose-title">
+          <img class="rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+          <h3>Movie</h3>
+        </div><!--rose-title-->
+        <div class="youtube">
+          <a href="javascript:void(0);" data-video-id="jPnR0ug6JpE" class="js-modal-video">
+            <img src="./assets/images/movie/image_samune.svg" alt="イメージ動画">
+          </a>
+        </div><!-- youtube -->
+        <p class="youtube-p">
+          GALLERYではもっとサロンの雰囲気を<br>
+          ご体感いただけます。
+        </p>
+        <div class="btn">
+          <a href="./gallery.html" class="a-btn">GALLERY</a>
+        </div><!-- btn -->
+      </div><!-- movie-wrap -->
+
+
+</section>
+
+</main>
+
+
+      
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-btn-wrapper-01">
+      <img class="footer-logo" src="./assets/images/common/logo_white.svg" alt="ビューティークッキングサロンユウのロゴ">
+      <a class="footer-btn-reservation" href="reservation.html" >
+        <img src="./assets/images/common/reserve_button_footer.svg" alt="予約ボタン">
+      </a>
+    </div>
+    <div class="footer-btn-wrapper-02">
+      <div class="sns-icon-wrapper">
+        <a class="sns-icon-item" href="#instagram"><img src="./assets/images/common/insta_icon_footer.svg" alt="Instagramアイコン"></a>
+        <a class="sns-icon-item footer-line-icon" href="#line"><img src="./assets/images/common/line_icon_footer.svg" alt="LINEアイコン"></a> 
+      </div><!-- sns-icon -->
+      <a class="footer-btn-top" href="#">
+        <img src="./assets/images/common/link_to_top_button.svg" alt="トップへ戻る">
+      </a>
+    </div>
+  </div><!--footer-wrapper-->
+  <div class="footer-copy">
+    <p>
+      <small>&copy; 2023 All right reserved</small>
+    </p>
+  </div>
+</footer>
+
+  
+</body>
+</html>

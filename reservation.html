@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="./assets/js/jquery-3.6.3.min.js" defer></script>
+<script src="./assets/js/script.js" defer></script>
+<!-- favicon-->
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="android-touch-icon.png" sizes="192x192">
+
+<title>RESERVATION</title>
+<link href="./assets/css/normalize.css" rel="stylesheet">
+<link href="./assets/css/nav.css" rel="stylesheet">
+<link href="./assets/css/common.css" rel="stylesheet">
+<link href="./assets/css/reservation.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+
+<!-- ヘッダー固定ナブ -->
+<body>
+  <div class="all-wrapper">
+    <div class="trigger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="trigger-close">close</span>
+      <span class="trigger-menu">menu</span>
+    </div>
+
+    <header class="header">
+      <div class="nav-inner">
+        <div class="header-logo">
+          <a>
+            <picture>
+            <source srcset="./assets/images/common/logo_black.svg" media="( min-width:769px )">
+            <source srcset="./assets/images/common/logo_horizontal.svg" media="( max-width:768px )">
+            <img src="./assets/images/common/logo_horizontal.svg" alt="beauty cooking salon yuロゴ">
+            </picture>
+          </a>
+    </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Top<span>トップ</span></a></li>
+            <li><a href="about.html">About<span>講師プロフィール、クッキングサロンについて</span></a></li>
+            <li><a href="lesson.html">Lesson<span>レッスンについて</span></a></li>
+            <li><a href="gallery.html">Gallery<span>ギャラリー (レッスンの様子など)</span></a></li>
+            <li><a href="reservation.html">Reservation<span>ご予約</span></a></li>
+            <li class="nav-contact"><a href="contact.html">Contact<span>お問い合わせ</span></a></li>
+          </ul>
+        </nav>
+      </div><!-- .nav-inner -->
+    </header>
+
+<!----------- メインビジュアル----------->
+  <div class="reservation-main-visual">
+    <div class="reservation-title">
+      <h1>Reservation</h1>
+    </div>
+    <picture>
+      <source srcset="./assets/images/reservation/reservation_main_top.jpg" media="(min-width:769px)">
+      <source srcset="./assets/images/reservation/reservation_main_768px.jpg" media="(max-width:768px)">
+      <source srcset="./assets/images/reservation/reservation_main_390px.jpg" media="(max-width:390px)">
+      <img src="./assets/images/reservation/reservation_main_top.jpg" alt="スペシャリテプレートの写真">
+    </picture>
+  </div>
+
+<!----------- 固定リンクボタン ----------->
+  <div class="link-button">
+    <a href="#instagram"><img class="insta-icon" src="assets/images/common/insta_icon.svg" alt="Instagramアイコン"></a>
+    <a href="reservation.html"><img class="reserve-icon" src="assets/images/common/reserve_button_kotei.svg" alt="予約ボタン"></a> 
+  </div><!-- link-button -->
+
+<!----------- ページ内リンク ----------->
+  <ul class="reservation-nav-list">
+    <li><a href="#reservation-link1"><span>ご予約の</span><span>流れ</span></a></li>
+    <li><a href="#reservation-link2"><span>アクセスと</span><span>料金</span></a></li>
+    <li><a href="#reservation-link3"><span>よくある</span><span>ご質問</span></a></li>
+    <li><a href="#reservation-link4"><span>予約</span><span>フォームへ</span></a></li>
+  </ul>
+
+<!---------- レッスンの流れ ----------->
+<section>
+  <div class="reservation-rose-title">
+    <img class="reservation-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <h3 class="reservation-rose-title-head">
+      <a id="reservation-link1" class="anchor">ご予約の流れ</a>
+    </h3>
+  </div>
+  <div class="lesson">
+    <img class="pc" src="./assets/images/reservation/1_5.png" alt="レッスンの流れ">
+    <img class="sp" src="./assets/images/reservation/Group_295.svg" alt="レッスンの流れ">
+  </div>
+</section>
+
+<!----------- googleカレンダー ----------->
+<section>
+  <div class="reservation-rose-title">
+    <img class="reservation-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <img id="i01" src="./assets/images/reservation/01.svg" alt="01">
+    <h3 class="reservation-rose-title-head">日程を確認</h3>
+  </div>
+  <p class="reservation-google-cal-text">
+    季節ごとにクッキングレッスンを開催しております。カレンダーより日程をご確認の上、下記のフォームよりご予約ください。
+  </p>
+  <div class="blue-bg">
+    <div class="google-cal">
+      <iframe src="https://calendar.google.com/calendar/embed?src=cb504e2c0c4d5acab5d78625fdb1e2e8657d29d2fa631bc3417855f1639ede12%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+</section>
+
+<!----------- 注意事項 ------------->
+<section class="for-guests-wrapper">
+  <div class="reservation-rose-title">
+    <img class="reservation-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <img id="i02" src="./assets/images/reservation/02.svg" alt="02">
+    <h3 class="reservation-rose-title-head">注意事項を確認
+    </h3>
+  </div>
+  <div class="for-guests">
+    <h4>For Guests</h4>
+    <p><span>予約</span><span>フォーム</span>へお進みになる前に、<br>
+      以下の３項目をご確認くださいませ。
+    </p>
+    <p>
+      <span>ご質問等はCONTACTから</span><span>お気軽にお尋ねください。</span>
+    </p>
+  </div>
+
+  <div id="contact-link" class="faq-wrapper">
+    <div class="cp-qa">
+      <div class="cp-actab tab-1">
+        <input id="cp-tabfour1" type="checkbox" name="tabs">
+        <label for="cp-tabfour1"><span>ご予約に際してのご注意点</span><span>※アレルギーに関することを含む</span></label>
+        <dl class="cp-actab-content">
+          <dt>アレルギーについて</dt>
+          <dd>ご予約時にアレルギーをお持ちの食材等をご連絡いただけましたら、対応いたしますのでお気軽にご相談ください。</dd>
+
+          <dt>サロンの住所について</dt>
+          <dd>自宅での教室ですのでホームページ内での詳細な住所の明記は避けさせていただいております。ご予約いただいた方には、改めて詳しい住所をお伝えいたします。</dd>
+
+          <dt>酒類の提供について</dt>
+          <dd>お車でお越しのお客様への酒類のご提供はご遠慮させていただいておりますので予めご了承くださいませ。乾杯ドリンクについてはソフトドリンクのご用意もございます。</dd>
+
+          <dt>お子様のご同行について</dt>
+          <dd>当サロンでは、小さなお子様のご同行は安全面を考慮しご遠慮いただいております。</dd>
+
+          <dt>レッスン時の撮影・SNS等への投稿について</dt>
+          <dd>レッスンの工程やキッチンスペースといったサロン共有部分などは問題ございませんが、プライベート空間の撮影や過度な撮影などはご遠慮いただいております。SNS等の投稿に関しては、大歓迎ですので是非「&#035;cookingyu」と共に載せていただけると幸いです。</dd>
+
+          <dt>お支払方法について</dt>
+          <dd>当日、現金でのお支払いをお願いいたします。</dd>
+
+          <dt>当日のお持ち物について</dt>
+          <dd>メモする際の筆記用具や撮影道具は必要な場合はお持ちください。タオルやエプロン等はご持参の必要はございません。</dd>
+
+          <dt>レッスン時間について</dt>
+          <dd>レッスンの開講時間は11:00~14:00ですが、終了時間は都度前後する場合がございます。</dd>
+
+          <dt>次回以降レッスン開講日のお知らせについて</dt>
+          <dd>当サロンでは1年に4~5回のレッスンを開催しており&#40;2か月に1回	&#43;&#945;のペースで季節に応じた料理&#41;、一度お越しいただいたお客様には次回のレッスン開講日程をご連絡させていただいております。ご不要な場合は、お手数をおかけしますがその旨をご連絡いただけますと幸いです。</dd>
+        </dl><!--cp-actab-content-->
+      </div><!--cp-actab　tab-1-->
+
+      <div class="cp-actab tab-2">
+      <input id="cp-tabfour2" type="checkbox" name="tabs">
+	    <label for="cp-tabfour2">キャンセルポリシー</label>
+      <dl class="cp-actab-content">
+        <dt>キャンセルをされる際のお願い</dt>
+        <dd>当サロンではご予約を頂いた時点で材料の確保を始めております。消費期限などもあるため他に使用することができず破棄することにもなり得ます。そのため体調不良、緊急時などやむを得ない事情以外でのキャンセルはご遠慮くださいますようお願いいたします。日によってはキャンセル待ちをしてくださっている方もいますので、都合が悪くなられた場合はお早めにご連絡をお願い致します。</dd>
+
+        <dt>予約時間の遅刻について</dt>
+        <dd>万が一ご予約時間に遅れてお越しになる場合は、遅刻の可能性があるとわかった時点でお早めにご連絡ください。なお、予約時間から15分を越えてお越しにならない場合は無断キャンセルとさせていただきます。また、無断での遅刻が繰り返される場合、次回ご予約をお断りする可能性がありますので予めご了承ください。</dd>
+
+        <dt>ご予約後のキャンセル期限について</dt>
+        <dd>ご予約のキャンセルにつきましては、前日までにご連絡ください。</dd>
+
+        <dt>ご予約後のキャンセル料金について</dt>
+        <dd>レッスン当日のキャンセル、無断キャンセルの場合はレッスン代金の100&#37;をご請求
+        いたしますので予めご了承ください。</dd>
+      </dl><!--cp-actab-content-->
+    </div><!--cp-actab-->
+
+    <div class="cp-actab tab-3">
+      <input id="cp-tabfour3" type="checkbox" name="tabs">
+      <label for="cp-tabfour3">プライバシーポリシー</label>
+      <dl class="cp-actab-content">
+        <p>久永優子ウェブサイト（以下「当方」といいます）は、お客様の個人情報の取扱いについて、その重要性を深く認識し、個人情報保護に関する法律およびその関連法令を遵守します。当方は、お客様からお預かりした個人情報を適切に管理し、かつ目的に沿って正しく利用することにより、お客様のご期待と信頼に応えてまいります。
+        </p>
+
+        <dt>個人情報の取扱いの適用範囲</dt>
+        <dd>個人情報の取扱いについては、お客様が当方のサイトを通じて当方へのご連絡をされた時に適応されます。お客様が当方のサイトを利用される際に収集された個人情報は、
+          個人情報の取扱いについての考え方に従い管理されます。</dd>
+
+        <dt>個人情報の利用目的</dt>
+        <dd>当方は、お客様から収集させていただいた個人情報を、本サービスを提供する目的の他に、以下の各号に定める目的のために利用することがあります。
+          本サービスの提供または以下に定める目的以外に、当社はお客様の個人情報利用することはありません。<br>
+          1.お客様からのお問い合わせに対して回答を行う場合<br>
+          2.お客様に対して、当方のサービスに対するご意見やご感想のご提供をお願いするため<br>
+          3.当方がお客様に別途連絡の上、個別にご了解をいただいた目的に利用するため<br>
+          4.お客様の属性（年齢、住所など）ごとに分類された統計的資料を作成するため</dd>
+
+        <dt>個人情報の安全管理について</dt>
+        <dd>当方は個人情報の正確性及び安全性を確保する為、個人情報へのアクセス管理、持ち出し手段の制限、不正アクセスおよび、漏洩、紛失、破壊、改ざんなどに対しては、合理的な安全対策を講じるとともに、万一、
+          漏洩等個人情報に関する事故が発生した場合には、再発防止策を含む適切な対策を速やかに講じます。</dd>
+
+        <dt>個人情報の預託について</dt>
+        <dd>当方は、個人情報を本人の許可無く他の事業者や個人などの第三者に提供および公開
+          することはありません。ただし、以下に該当する場合はその限りではありません。<br>
+          1.情報提供について本人の同意がある場合<br>
+          2.官公庁等の公的機関から法令に基づき開示を求められた場合<br>
+          3.本サイトの運営に関する業務提携先に対して個人情報を開示する場合。
+          ただし、この場合に開示する情報は必要な範囲のみに限定し、開示先に対して契約等により個人情報の管理を義務付けます。</dd>
+
+        <dt>その他インターネット上のプライバシーに関する確認事項</dt>
+        <dd>1.掲示板など、誰もがアクセスできるインターネット上で自発的に個人情報を開示した場合、その情報は他の利用者によって収集され使用される可能性があることに留意してください。
+          メールアドレスを公開すれば、そこに掲示された情報をもとに、望ましくないメッセージを受け取ることがあります。お客様には自己の責任において情報を発信することを認識していただく必要があります。<br>
+          2.当ウェブサイトを通じてアクセスできる第三者のサイト及びサービス、又は懸賞や販売促進活動などを通して個人情報を収集している企業等は、
+          当方とは独立した個々のプライバシーに関しての規約やデータの収集規約を定めています。当方は、これらの独立した第三者の規約や活動に対していかなる義務や責任も負いません。</dd>
+
+        <dt>個人情報の取扱いの変更及び通知</dt>
+        <dd>当方は、本個人情報の取扱いについての内容を、当方の営業上の必要性、新法令の施行、既存法令の改正その他の事情により、事前の予告なく変更することがあります。
+          変更した場合は、本ウェブサイトに掲示し、お知らせします。ご利用の際には本ページの最新の内容をご確認ください。個人情報、保有個人データ等の取扱いに関するご要望・ご質問等は、下記連絡先までお問い合せください。</dd>
+
+        <dt>個人情報保護方針に関するお問い合せ先</dt>
+        <dd>個人情報管理責任者<br>
+          久永優子<br>
+          お問い合わせはお問い合わせフォームからお願いします。</dd>
+        </dl><!--cp-actab-content-->
+      </div><!--cp-actab-->
+    </div><!--cp-qa-->
+</div><!--faq-wrapper-->
+</section>
+
+<!------------ 同意⇒予約フォームへ ----------->
+<section>
+  <div class="reservation-rose-title">
+    <img class="reservation-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <img id="i03" src="./assets/images/reservation/03.svg" alt="03">
+    <h3 class="reservation-rose-title-head">
+      <a id="reservation-link4" class="anchor">予約フォーム入力</a>
+    </h3>
+  </div>
+  <div class="go-reserve-wrapper">
+    <div class="go-reserve">
+      <div>
+        <input type="checkbox" id="reserve-tab1">
+        <label for="reserve-tab1"><span>上記３項目を確認の上、</span><span>その内容に同意します。</span></label>
+        <p><span>チェック入力後、</span><span>ご予約へお進みいただけます。</span></p>
+        <a href="#" class="reserve-btn">予約フォームへ</a>
+      </div>
+  </div><!--go-reserve-->
+  </div><!--go-reserve-wrapper-->
+</section>
+
+<!------------- サロンの場所 ------------->
+<section>
+  <div class="access-title">
+    <img class="reservation-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <h3 class="content-access-title-head reservation-rose-title-head">
+      <a id="reservation-link2" class="anchor">サロンの場所</a>
+    </h3>
+    <img class="content-access-sign" src="./assets/images/reservation/access_text_deco.svg" alt="access">
+  </div><!-- access-title" -->
+  <div class="reservation-access-container">
+    <div class="access-wrapper">
+      <div class="access-text-wrapper">
+        <div class="access-text">
+          <h4>
+            <span>公共交通機関で</span><span>お越しの方</span><br>
+          </h4>
+            <P>
+              <span>阪急六甲駅より</span><span>タクシーで7分</span><br>
+              <span>神戸市バス六甲ケーブル下駅より</span><span>徒歩6分</span>
+            </p>
+            <br>
+          <h4>
+            お車でお越しの方<br>
+          </h4>
+            <p>
+              駐車場あります。<br>
+              お問い合わせください。
+            </p>
+            <p class="small-text">※詳しい住所はご予約確定後にお知らせします。</p>
+          </div><!-- access-text -->
+      </div><!-- access-text-wrapper -->
+      <img class="access-illust-map" src="./assets/images/reservation/access_map.jpg" alt="アクセスのイラストマップ">
+    </div><!-- access-wrapper -->
+  </div><!-- reservation-access-container -->
+</section>
+
+<!------------ 料金について------------>
+<section class="lesson-price-container">
+  <div class="lesson-wrap">
+    <div class="lesson-price-goldline">
+        <div class="price-wrapper">
+          <div class="price-title">
+            <img class="reservation-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+            <h3 class="content-salon-title-head reservation-rose-title-head">料金について</h3>
+          </div><!-- price-title -->
+          <p>レッスン1回につき￥6,000- ( 税込 )<br>
+            <span class="price-small-text">レシピ ( ５品 ) 、乾杯ドリンク、お土産付き</span><br><br>
+            <span class="price-small-text">入会費不要・都度払いの形式をとっております<br>
+            お好きな日程をご予約いただきお越しください</span>
+          </p>
+        </div><!-- price-wrapper -->
+    </div><!-- lesson-price-goldline -->
+  </div><!-- lesson-wrap -->
+</section><!-- lesson-price-container -->
+
+<!------------ FAQへのリンク ------------>
+<section>
+  <div class="reservation-rose-title">
+    <img class="reservation-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <h3 class="reservation-rose-title-head">
+      <span class="en"><a id="reservation-link3"class="anchor">FAQ</a></span>
+      <span class="ja">よくあるご質問</span>
+    </h3>
+  </div><!--reservation-rose-title-->
+  <p class="reservation-faq-text">
+    <span>よくあるご質問は以下のボタンから</span><span>ご確認いただけます。</span>
+  </p>
+  <div class="contact-button">
+    <a href="./contact.html#contact-link2" class="contact-btn">よくあるご質問へ</a>
+  </div><!-- reserve-button -->
+</section>
+
+  <!------------------- footer ----------------------->
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-btn-wrapper-01">
+      <img class="footer-logo" src="./assets/images/common/logo_white.svg" alt="ビューティークッキングサロンユウのロゴ">
+      <a class="footer-btn-reservation" href="reservation.html" >
+        <img src="./assets/images/common/reserve_button_footer.svg" alt="予約ボタン">
+      </a>
+    </div>
+    <div class="footer-btn-wrapper-02">
+      <div class="sns-icon-wrapper">
+        <a class="sns-icon-item" href="#instagram"><img src="./assets/images/common/insta_icon_footer.svg" alt="Instagramアイコン"></a>
+        <a class="sns-icon-item footer-line-icon" href="#line"><img src="./assets/images/common/line_icon_footer.svg" alt="LINEアイコン"></a> 
+      </div><!-- sns-icon -->
+      <a class="footer-btn-top" href="#">
+        <img src="./assets/images/common/link_to_top_button.svg" alt="トップへ戻る">
+      </a>
+    </div>
+  </div><!--footer-wrapper-->
+  <div class="footer-copy">
+    <p>
+      <small>&copy; 2023 All right reserved</small>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

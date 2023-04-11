@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="./assets/js/jquery-3.6.3.min.js" defer></script>
+<script src="./assets/js/script.js" defer></script>
+<script src="./assets/js/lightbox.min.js" defer></script>
+<script src="./assets/js/gallery.js" defer></script>
+
+<script src="./assets/js/jquery-modal-video.min.js" defer></script>
+<script src="./assets/js/init.js" defer></script>
+
+<!-- modal-video -->
+<link rel="stylesheet" href="./assets/css/modal-video.min.css">
+<!-- favicon-->
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="android-touch-icon.png" sizes="192x192">
+
+<title>GALLERY</title>
+<link href="./assets/css/normalize.css" rel="stylesheet">
+<link href="./assets/css/nav.css" rel="stylesheet">
+<link href="./assets/css/common.css" rel="stylesheet">
+<link href="./assets/css/gallery.css" rel="stylesheet">
+<link href="./assets/css/lightbox.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+
+<!-- ヘッダー固定ナブ -->
+<body>
+  <div class="all-wrapper">
+    <div class="trigger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="trigger-close">close</span>
+      <span class="trigger-menu">menu</span>
+    </div>
+
+    <header class="header">
+      <div class="nav-inner">
+        <div class="header-logo">
+          <a href="index.html">
+          <picture>
+            <source srcset="./assets/images/common/logo_black.svg" media="( min-width:769px )">
+            <source srcset="./assets/images/common/logo_horizontal.svg" media="( max-width:768px )">
+            <img src="./assets/images/common/logo_horizontal.svg" alt="beauty cooking salon yuロゴ">
+          </picture>
+          </a>
+    </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Top<span>トップ</span></a></li>
+            <li><a href="about.html">About<span>講師プロフィール、クッキングサロンについて</span></a></li>
+            <li><a href="lesson.html">Lesson<span>レッスンについて</span></a></li>
+            <li><a href="gallery.html">Gallery<span>ギャラリー (レッスンの様子など)</span></a></li>
+            <li><a href="reservation.html">Reservation<span>ご予約</span></a></li>
+            <li class="nav-contact"><a href="contact.html">Contact<span>お問い合わせ</span></a></li>
+          </ul>
+        </nav>
+      </div><!-- .nav-inner -->
+    </header>
+
+  <main>
+    <!-- 固定リンクボタン -->
+    <div class="link-button">
+      <a href="#instagram"><img class="insta-icon" src="assets/images/common/insta_icon.svg" alt="Instagramアイコン"></a>
+      <a href="reservation.html"><img class="reserve-icon" src="assets/images/common/reserve_button_kotei.svg" alt="予約ボタン"></a> 
+      </div><!-- link-button -->
+
+    <!----------------メインビジュアル------------------------>
+    <div class="gallery-main-visual">
+      <div class="gallery-title">
+        <h1>Gallery</h1>
+      </div>
+      <picture>
+        <source srcset="./assets/images/gallery/gallery_main_top.jpg" media="(min-width:769px)">
+        <source srcset="./assets/images/gallery/gallery_main_768px.jpg" media="(max-width:768px)">
+        <source srcset="./assets/images/gallery/gallery_main_390px.jpg" media="(max-width:390px)">
+        <img src="./assets/images/gallery/gallery_main_top.jpg" alt="スペシャリテプレートの写真">
+      </picture>
+    </div><!-- gallery-main-visual -->
+
+  <section><!-- intro-zone-->
+    <div class="gallery-intro">
+      <h2>至福の時間の始まりを告げる<br>
+          ご挨拶の一品</h2>
+    </div>
+    <div class="gallery-intro-message">
+      <p>サロンの始めには、お食事に合わせたシャンパンやワインと共に
+        Spécialité Plate (スペシャリテプレート)と名付けたご挨拶の一品でお出迎えいたします。
+        四季折々、旬の食材で季節に合わせたコンセプトのプレートを
+        是非お楽しみにいらしてください。
+      </p>
+    </div>
+  </section>
+
+<!-- スペシャリテプレートのslider↓ -->
+<section>
+  <div class="gallery-rose-title">
+    <img class="gallery-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <h3 class="gallery-rose-title-head ">
+      <span class="en">Spécialité Plate</span>
+      <span class="ja">スペシャリテプレート</span>
+    </h3>
+  </div><!--rose-title-->
+  <div class="special-slider">
+    <ul class="gallery-slider-list">
+      <li class="selected"><img src="./assets/images/gallery/gallery_slide_01.jpg" alt="ハートのジャムが可愛いスペシャリテプレート"></li>
+      <li><img src="./assets/images/gallery/gallery_slide_02.jpg" alt="ハートのクラッカーがアクセントのスペシャリテプレート"></li>
+      <li><img src="./assets/images/gallery/gallery_slide_03.jpg" alt="食材で作られたバラが美しいスペシャリテプレート"></li>
+      <li><img src="./assets/images/gallery/gallery_slide_04.jpg" alt="カラフルな夏野菜のスペシャリテプレート"></li>
+      <li><img src="./assets/images/gallery/gallery_slide_05.jpg" alt="ゴールドのプレートとのコントラストが素敵なスペシャリテプレート"></li>
+      <li><img src="./assets/images/gallery/gallery_slide_06.jpg" alt="クリスマスリースのようなスペシャリテプレート"></li>
+      <li class="selected"><img src="./assets/images/gallery/gallery_slide_01.jpg" alt="ハートのジャムが可愛いスペシャリテプレート"></li>
+      <li><img src="./assets/images/gallery/gallery_slide_02.jpg" alt="ハートのクラッカーがアクセントのスペシャリテプレート"></li>
+      <li class="extra-slide"><img src="./assets/images/gallery/gallery_slide_06.jpg" alt="クリスマスリースのようなスペシャリテプレート"></li>
+    </ul>
+    <ul class="arrow-container">
+      <li class="prev"><img src="./assets/images/gallery/gallery_arrow.png" alt="左向きの矢印ボタン"></li>
+      <li class="next"><img src="./assets/images/gallery/gallery_arrow.png" alt="右向きの矢印ボタン"></li>
+    </ul>
+    <div class="special-slider-text">
+      <h4>Our Special</h4>
+      <p>季節の食材を使った<br>
+        スペシャリテプレート
+      </p>
+    </div>
+  </div><!--special-slider-->
+</section>
+
+<!-- シャンパンイメージ↓ -->
+<section>
+  <div class="champagne-wrapper">
+    <div class="cha-bubble cha-bubble-01">
+      <img src="./assets/images/gallery/gallery_cha_bubble_img_01.jpg" alt="">
+    </div>
+    <div class="cha-bubble cha-bubble-02">
+      <img src="./assets/images/gallery/gallery_cha_bubble_img_02.jpg" alt="">
+    </div>
+    <div class="cha-bubble cha-bubble-03">
+      <img src="./assets/images/gallery/gallery_cha_bubble_img_03.jpg" alt="">
+    </div>
+    <div class="cha-bubble cha-bubble-04">
+      <img src="./assets/images/gallery/gallery_cha_bubble_img_04.jpg" alt="">
+    </div>
+    <div class="cha-bubble cha-bubble-05">
+      <img src="./assets/images/gallery/gallery_cha_bubble_img_05.jpg" alt="">
+    </div>
+    <div class="champagne-menu-bg">
+      <span class="champagne-menu-text">
+        <div class="gallery-rose-icon">
+          <img src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+        </div>
+        <p>
+          <span>ラグジュアリーな非日常空間が</span><br>
+          <span>物語の始まりを予感させ</span><br>
+          <span>彩り豊かな絵画のような</span><br>
+          <span>スペシャリテプレートが</span><br>
+          <span>あなたの想像力を掻き立てます</span>
+        </p>
+        <p>
+          <span>優雅な時間と共に</span><br>
+          <span>心が花開くメニューです</span>
+        </p>
+      </span>
+    </div>
+  </div><!--champagne-wrapper-->
+</section>
+
+<!-- Gallery Photoコーナー↓ -->
+<section class="gallery-photo-section">
+  <div class="gallery-rose-title">
+    <img class="gallery-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+    <h3 class="gallery-rose-title-head">
+      <span class="en">Photo</span>
+      <span class="ja">サロンの風景</span>
+    </h3>
+  </div><!--rose-title-->
+  <div class="gallery-loop-wrap gallery-loop-row01">
+    <ul class="gallery-loop">
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_01.jpg"><img src="./assets/images/gallery/gallery_photo_slide_01.jpg" alt="調理中のスペシャリテプレート"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_02.jpg"><img src="./assets/images/gallery/gallery_photo_slide_02.jpg" alt="セッティングされたテーブル"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_03.jpg"><img src="./assets/images/gallery/gallery_photo_slide_03.jpg" alt="夏のコース料理のスターター"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_04.jpg"><img src="./assets/images/gallery/gallery_photo_slide_04.jpg" alt="シャンパンで乾杯"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_05.jpg"><img src="./assets/images/gallery/gallery_photo_slide_05.jpg" alt="春の季節感たっぷりのお花とお酒"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_06.jpg"><img src="./assets/images/gallery/gallery_photo_slide_06.jpg" alt="テーブルに並んだパスタとハンバーグ"></a></li>
+      <!--repeat-->
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_01.jpg"><img src="./assets/images/gallery/gallery_photo_slide_01.jpg" alt="調理中のスペシャリテプレート"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_02.jpg"><img src="./assets/images/gallery/gallery_photo_slide_02.jpg" alt="セッティングされたテーブル"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_03.jpg"><img src="./assets/images/gallery/gallery_photo_slide_03.jpg" alt="夏のコース料理のスターター"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_04.jpg"><img src="./assets/images/gallery/gallery_photo_slide_04.jpg" alt="シャンパンで乾杯"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_05.jpg"><img src="./assets/images/gallery/gallery_photo_slide_05.jpg" alt="春の季節感たっぷりのお花とお酒"></a></li>
+      <li><a data-lightbox="lightbox-gallery01" href="./assets/images/gallery/gallery_photo_slide_06.jpg"><img src="./assets/images/gallery/gallery_photo_slide_06.jpg" alt="テーブルに並んだパスタとハンバーグ"></a></li>
+    </ul>
+  </div><!--gallery-loop-wrap-01-->
+  <div class="gallery-loop-wrap gallery-loop-row02">
+    <ul class="gallery-loop">
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_07.jpg"><img src="./assets/images/gallery/gallery_photo_slide_07.jpg" alt="トマトソースにペンネを追加"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_08.jpg"><img src="./assets/images/gallery/gallery_photo_slide_08.jpg" alt="炎が温かそうな暖炉"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_09.jpg"><img src="./assets/images/gallery/gallery_photo_slide_09.jpg" alt="綺麗な薔薇のリースと扉"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_10.jpg"><img src="./assets/images/gallery/gallery_photo_slide_10.jpg" alt="照明が可愛いお部屋の一角"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_11.jpg"><img src="./assets/images/gallery/gallery_photo_slide_11.jpg" alt="食事を楽しむテーブルの様子とシャンパン"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_12.jpg"><img src="./assets/images/gallery/gallery_photo_slide_12.jpg" alt="お鍋の中の煮込みハンバーグ"></a></li>
+      <!--repeat-->
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_07.jpg"><img src="./assets/images/gallery/gallery_photo_slide_07.jpg" alt="トマトソースにペンネを追加"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_08.jpg"><img src="./assets/images/gallery/gallery_photo_slide_08.jpg" alt="炎が温かそうな暖炉"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_09.jpg"><img src="./assets/images/gallery/gallery_photo_slide_09.jpg" alt="綺麗な薔薇のリースと扉"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_10.jpg"><img src="./assets/images/gallery/gallery_photo_slide_10.jpg" alt="照明が可愛いお部屋の一角"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_11.jpg"><img src="./assets/images/gallery/gallery_photo_slide_11.jpg" alt="食事を楽しむテーブルの様子とシャンパン"></a></li>
+      <li><a data-lightbox="lightbox-gallery02" href="./assets/images/gallery/gallery_photo_slide_12.jpg"><img src="./assets/images/gallery/gallery_photo_slide_12.jpg" alt="お鍋の中の煮込みハンバーグ"></a></li>
+    </ul>
+  </div><!--gallery-loop-wrap-02-->
+
+  <div class="gallery-photo-text">
+    <p>ご自宅でも手軽に実践できるおもてなし料理を学びながら、
+      <span>ホーム</span><span>パーティー</span>
+      感覚で思い思いの時間をお過ごしいただけます。
+    </p>
+  </div><!--recipe-text-->
+</section>
+
+<!-- 教室のテラスからの景色 -->
+<section>
+  <div class="scenery-wrapper">
+    <div class="scenery-title">
+      <h3 class="gallery-rose-title-head">
+        <span class="en">Scenery</span>
+        <span class="ja">テラスからの景色</span>
+      </h3>
+    </div>
+    <div class="scenery-photo-01">
+      <img src="./assets/images/gallery/gallery_scenery_day.jpg" alt="天気の良い日のテラスからの眺め">
+    </div>
+    <div class="scenery-photo-02">
+      <img src="./assets/images/gallery/gallery_scenery_evening.jpg" alt="夜のテラスからの眺め">
+    </div>
+    <div class="scenery-text">
+      <p>お食事後にはテラスからの景色をお楽しみいただくのもおすすめです。季節・天気・時間により異なる顔を見せる雄大な自然と神戸の街を贅沢に一望いただけます。至福の時間の締めくくりに、是非ゆっくりとご堪能下さい。
+      </p>
+    </div>
+  </div><!-- scenery-wrapper -->
+</section>
+
+<!-- レシピ動画-->
+<section>
+  <div class="recipe-movie-wrap">
+    <div class="gallery-rose-title">
+      <img class="gallery-rose-icon" src="./assets/images/common/rose_icon.svg" alt="薔薇のアイコン">
+      <h3 class="gallery-rose-title-head">
+        <span class="en">Movie</span>
+        <span class="ja">プレゼント動画</span>
+      </h3>
+    </div><!--rose-title-->
+    <div class="recipe-lead">
+      <p>実際にお作りするお料理を特別にほんの少しだけご紹介！
+          過去の<span>コース</span>料理にてお出ししたトマト<span>ソース</span>のペンネです。
+          サロンではこのようにお家でも見返せるように動画を撮っていただけます。
+      </p>
+    </div>
+    <div class="youtube">
+      <a href="javascript:void(0);" data-video-id="lG0aw6JL2x0" class="js-modal-video">
+        <img src="./assets/images/movie/recipe_samune.svg" alt="レシピ動画">
+      </a>
+    </div><!-- youtube -->
+    <div class="recipe-text">
+      <p>ご紹介しているお料理は、一例です。必ず<span>コース</span>に含まれているとは限りません。
+      </p>
+    </div><!--recipe-text-->
+  </div><!-- recipe-movie-wrap -->
+</section>
+
+</main>
+  <!------------------- footer ----------------------->
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-btn-wrapper-01">
+      <img class="footer-logo" src="./assets/images/common/logo_white.svg" alt="ビューティークッキングサロンユウのロゴ">
+      <a class="footer-btn-reservation" href="reservation.html" >
+        <img src="./assets/images/common/reserve_button_footer.svg" alt="予約ボタン">
+      </a>
+    </div>
+    <div class="footer-btn-wrapper-02">
+      <div class="sns-icon-wrapper">
+        <a class="sns-icon-item" href="#instagram"><img src="./assets/images/common/insta_icon_footer.svg" alt="Instagramアイコン"></a>
+        <a class="sns-icon-item footer-line-icon" href="#line"><img src="./assets/images/common/line_icon_footer.svg" alt="LINEアイコン"></a> 
+      </div><!-- sns-icon -->
+      <a class="footer-btn-top" href="#">
+        <img src="./assets/images/common/link_to_top_button.svg" alt="トップへ戻る">
+      </a>
+    </div>
+  </div><!--footer-wrapper-->
+  <div class="footer-copy">
+    <p>
+      <small>&copy; 2023 All right reserved</small>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

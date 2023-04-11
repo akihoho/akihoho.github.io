@@ -1,0 +1,1378 @@
+
+@charset "UTF-8";
+body{
+  background-color: #fff;
+}
+h1{
+  color: #ffffff;
+  font-size: 9vw;
+  font-weight: 400;
+  font-family: 'Pinyon Script', cursive;
+  text-shadow: 4px 4px 4px rgba(192,192,192,.5);
+  line-height: 0;
+}
+h2{
+  font-size: 2.3vw;
+  /* font-weight: 200; */
+}
+h3{
+  font-size: 24px;
+}
+
+/* ------ lesson-メインビジュアル --------- */
+
+/* ファーストビューの部分 */
+.lesson-main-visual {
+	width: 83%;
+	margin: 10% auto 5%;
+	position: relative;
+}
+.lesson-title {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.lesson-main-visual {
+	width: 100%;
+	margin: 0;
+	}
+	.lesson-main-visual img {
+	width: 100%;
+	height: 49vh;
+	object-fit: cover;
+	}
+	.lesson-title {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	justify-content: flex-start;
+	align-items: end;
+	}
+	.lesson-main-visual::before {
+    content: url(../images/common/logo_with_bg.png);
+    transform: scale(0.6);
+    position: absolute;
+    top: -10px;
+    left: 0px;
+	}
+    .lesson-top-title h2{
+      font-size: 20px;
+    }
+    .lesson-top-message p{
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 390px) {
+	.lesson-main-visual {
+	width: 100vh;
+	margin: 10% auto 5%;
+	}
+	.lesson-main-visual img {
+	height: 49vh;
+	object-fit: cover;
+	}
+	.lesson-main-visual::before {
+  transform: scale(0.5);
+  top: -27px;
+  left: -30px;
+}
+}
+
+
+
+
+/* ------ lesson-ページタイトル --------- */
+.lesson-top-title{
+  text-align: center;
+  font-size: 2.4vw;
+  line-height: 1.8;
+  margin-bottom: 5%;
+}
+.lesson-top-message{
+  text-align: center;
+  line-height: 1.8;
+  /* margin-bottom: 10%; */
+  width: 70%;
+  margin: 30px auto 160px;
+
+}
+
+.lesson-top-message p {
+  font-size:18px ;
+  line-height: 3.6rem;
+  font-weight: 200;
+}
+
+
+@media ( max-width:768px ){
+
+  .lesson-top-title{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .lesson-top-message{
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 10%;
+  }
+}
+
+@media( max-width:700px){
+  .w700{
+    display: block;
+  }
+}
+
+@media ( max-width:390px ){
+  .intro-message{
+    max-width: 380px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .lesson-top-title {
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+  .lesson-top-title h3{
+    font-size: 16px;
+  }
+
+  .lesson-top-message{
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.8;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+}
+
+/* ------ メニュー表のリンク --------- */
+.menu-image-container {
+  position: relative;
+  width: 30vw; /* 画像の幅に合わせて設定 */
+  margin: 0 auto;
+  margin-bottom: 20%;
+  text-align: center;
+  object-fit: cover;
+}
+
+.menu-image-container img {
+  display: block;
+  width: 30vw;
+  object-fit: cover; /* 画像のアスペクト比を維持してリサイズ */
+}
+.menu-link-button {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #18212B;
+  text-decoration: none;
+}
+
+.menu-link-button li{
+padding-top: 20%;
+font-size: 1.5vw;
+}
+.button:hover {
+  background-color: #F3F5FB;
+}
+.menu-link-button p{
+  color: #D9B855;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 3vw;
+  padding-top: 2%;
+}
+.menu-rose-icon img {
+  width: 2.3vw;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+
+@media ( max-width:768px ){
+  .menu-image-container {
+    position: relative;
+    width: 40vw; /* 画像の幅に合わせて設定 */
+    margin: 0 auto;
+    margin-bottom: 20%;
+    text-align: center;
+    object-fit: cover;
+  }
+  
+  .menu-image-container img {
+    display: block;
+    width: 40vw;
+    object-fit: cover; /* 画像のアスペクト比を維持してリサイズ */
+  }
+  .menu-link-button {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #18212B;
+    text-decoration: none;
+  }
+  
+  .menu-link-button li{
+  padding-top: 20%;
+  font-size: 16px;
+  }
+  .button:hover {
+    background-color: #F3F5FB;
+  }
+  .menu-link-button p{
+    color: #D9B855;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 3vw;
+    padding-top: 2%;
+  }
+  .menu-rose-icon img {
+    width: 2.5vw;
+    margin: 0 auto;
+    margin-top: 15%;
+  }
+  }
+  @media ( max-width:600px ){
+    .menu-image-container {
+      position: relative;
+      width: 45vw; /* 画像の幅に合わせて設定 */
+      margin: 0 auto;
+      margin-bottom: 20%;
+      text-align: center;
+      object-fit: cover;
+    }
+    
+    .menu-image-container img {
+      display: block;
+      width: 45vw;
+      object-fit: cover; /* 画像のアスペクト比を維持してリサイズ */
+    }
+    .menu-link-button {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #18212B;
+      text-decoration: none;
+    }
+    
+    .menu-link-button li{
+    padding-top: 15%;
+    font-size: 16px;
+    }
+    .button:hover {
+      background-color: #F3F5FB;
+    }
+    .menu-link-button p{
+      color: #D9B855;
+      font-family: 'Pinyon Script', cursive;
+      font-size: 3vw;
+      padding-top: 2%;
+    }
+    .menu-rose-icon img {
+      width: 2.8vw;
+      margin: 0 auto;
+      margin-top: 13%;
+    }
+    }
+  @media ( max-width:500px ){
+    .menu-image-container {
+      position: relative;
+      width: 50vw; /* 画像の幅に合わせて設定 */
+      margin: 0 auto;
+      margin-bottom: 20%;
+      text-align: center;
+      object-fit: cover;
+    }
+    
+    .menu-image-container img {
+      display: block;
+      width: 50vw;
+      object-fit: cover; /* 画像のアスペクト比を維持してリサイズ */
+    }
+    .menu-link-button {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #18212B;
+      text-decoration: none;
+    }
+    
+    .menu-link-button li{
+    padding-top: 20%;
+    font-size: 14px;
+    }
+    .button:hover {
+      background-color: #F3F5FB;
+    }
+    .menu-link-button p{
+      color: #D9B855;
+      font-family: 'Pinyon Script', cursive;
+      font-size: 3vw;
+      padding-top: 2%;
+    }
+    .menu-rose-icon img {
+      width: 3vw;
+      margin: 0 auto;
+      margin-top: 15%;
+    }
+    }
+      @media ( max-width:500px ){
+    .menu-image-container {
+      position: relative;
+      width: 50vw; /* 画像の幅に合わせて設定 */
+      margin: 0 auto;
+      margin-bottom: 20%;
+      text-align: center;
+      object-fit: cover;
+    }
+    
+    .menu-image-container img {
+      display: block;
+      width: 50vw;
+      object-fit: cover; /* 画像のアスペクト比を維持してリサイズ */
+    }
+    .menu-link-button {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #18212B;
+      text-decoration: none;
+    }
+    
+    .menu-link-button li{
+    padding-top: 20%;
+    font-size: 14px;
+    }
+    .button:hover {
+      background-color: #F3F5FB;
+    }
+    .menu-link-button p{
+      color: #D9B855;
+      font-family: 'Pinyon Script', cursive;
+      font-size: 3vw;
+      padding-top: 2%;
+    }
+    .menu-rose-icon img {
+      width: 3vw;
+      margin: 0 auto;
+      margin-top: 15%;
+    }
+    }
+
+    @media ( max-width:400px ){
+      .menu-image-container {
+        position: relative;
+        width: 50vw; /* 画像の幅に合わせて設定 */
+        margin: 0 auto;
+        margin-bottom: 20%;
+        text-align: center;
+        object-fit: cover;
+      }
+      
+      .menu-image-container img {
+        display: block;
+        width: 50vw;
+        object-fit: cover; /* 画像のアスペクト比を維持してリサイズ */
+      }
+      .menu-link-button {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #18212B;
+        text-decoration: none;
+      }
+      
+      .menu-link-button li{
+      padding-top: 18%;
+      font-size: 13px;
+      }
+      .button:hover {
+        background-color: #F3F5FB;
+      }
+      .menu-link-button p{
+        color: #D9B855;
+        font-family: 'Pinyon Script', cursive;
+        font-size: 3vw;
+        padding-top: 2%;
+      }
+      .menu-rose-icon img {
+        width: 3vw;
+        margin: 0 auto;
+        margin-top: 15%;
+      }
+      }
+  
+
+/* ------ レッスンの基本情報 --------- */
+.lesson-image-tab{
+  display: none;
+  width: 100%;
+  margin-top: 20%;
+}
+
+#lesson-info-container{
+  width: 100%;
+  height: 60vw;
+  background-color: #F3F5FB;
+  position: relative;
+}
+.leeson-info-goldline{
+  width: 1180px;
+  height: 1000px;
+}
+.leeson-info-goldline{
+  position: absolute;
+  width: 88%;
+  height: 90%;
+  border: 1px solid #D9B855;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.lesson-info-wrapper{
+text-align: center;
+}
+.lesson-info-wrapper h2{
+  font-size: 1.6vw;
+  font-weight: 400;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.lesson-text-img-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.text-list{
+  font-size: 1.3vw;
+}
+.text-list div{
+  display: flex;
+  text-align: left;
+  border-bottom: 1px solid #D9B855;
+  margin-top: 3%;
+  margin-left: 4%;
+}
+.text-list dt{
+  width: 12vw;
+}
+.text-list dd{
+  margin-bottom: 5%;
+}
+.text-small-1{
+  font-size: 1vw;
+}
+.lesson-text-img-wrapper img{
+  width: 24vw;
+  height: 100%;
+  margin-left: 7%;
+}
+
+.text-list div:last-child {
+  border: none;
+}
+
+
+@media ( max-width:768px ){
+  .lesson-image-tab{
+    display: block;
+  }
+
+  #lesson-info-container{
+    width: 100%;
+    height: 125vw;
+    position: relative;
+  }
+  .leeson-info-goldline{
+    position: absolute;
+    max-width: 500px;
+    left: 15%;
+    right: 15%;
+    top: 5%;
+  }
+  .leeson-info-goldline{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .lesson-info-wrapper{
+    width: 100%;
+  }
+  .lesson-text-img-wrapper{
+    display: block;
+
+  }
+  .lesson-info-wrapper h2{
+    font-size: 16px;
+    padding-top: 5%;
+  }
+  .text-list{
+  font-size: 15px;
+  }
+  .text-small-1{
+    font-size: 12px;
+  }
+  .text-list div{
+    width: 68%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+
+  .text-list dt{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+  .lesson-text-img-wrapper img{
+    display: none;
+  }
+}
+
+@media ( max-width:700px ){
+  #lesson-info-container{
+    width: 100%;
+    height: 130vw;
+    position: relative;
+  }
+  .leeson-info-goldline{
+    position: absolute;
+    max-width: 500px;
+    left: 10%;
+    right: 10%;
+    top: 5%;
+  }
+  .leeson-info-goldline{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .lesson-info-wrapper{
+    width: 100%;
+  }
+  .lesson-text-img-wrapper{
+    display: block;
+
+  }
+  .lesson-info-wrapper h2{
+    font-size: 16px;
+    padding-top: 5%;
+  }
+  .text-list{
+  font-size: 15px;
+  }
+  .text-small-1{
+    font-size: 12px;
+  }
+
+  .text-list div{
+    width: 65%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text-list dt{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+  .lesson-text-img-wrapper img{
+    display: none;
+  }
+}
+@media ( max-width:600px ){
+  #lesson-info-container{
+    width: 100%;
+    height: 160vw;
+    position: relative;
+  }
+  .leeson-info-goldline{
+    position: absolute;
+    max-width: 400px;
+    left: 7%;
+    right: 7%;
+    top: 5%;
+  }
+  .leeson-info-goldline{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .lesson-info-wrapper{
+    width: 100%;
+  }
+  .lesson-text-img-wrapper{
+    display: block;
+
+  }
+  .lesson-info-wrapper h2{
+    font-size: 16px;
+    padding-top: 8%;
+  }
+  .text-small-1{
+    font-size: 12px;
+  }
+  .text-list div{
+    font-size: 15px;
+    width: 70%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text-list dt{
+    width: 100%;
+    padding-top: 8%;
+    padding-bottom: 3%;
+  }
+  .lesson-text-img-wrapper img{
+    display: none;
+  }
+}
+
+@media ( max-width:500px ){
+  #lesson-info-container{
+    width: 100%;
+    height: 200vw;
+    position: relative;
+    margin-bottom: 20%;
+  }
+  .leeson-info-goldline{
+    position: absolute;
+    max-width: 390px;
+    left: 7%;
+    right: 7%;
+    top: 5%;
+  }
+  .leeson-info-goldline{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .lesson-info-wrapper{
+    width: 100%;
+  }
+  .lesson-text-img-wrapper{
+    display: block;
+
+  }
+  .lesson-info-wrapper h2{
+    font-size: 16px;
+    padding-top: 10%;
+  }
+  .text-small-1{
+    font-size: 12px;
+  }
+
+  .text-list div{
+    font-size: 15px;
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text-list dt{
+    width: 100%;
+    padding-top: 8%;
+    padding-bottom: 3%;
+  }
+  .lesson-text-img-wrapper img{
+    display: none;
+  }
+}
+
+@media ( max-width:430px ){
+  #lesson-info-container{
+    width: 100%;
+    height: 950px;
+    position: relative;
+    margin-bottom: 20%;
+  }
+  .leeson-info-goldline{
+    position: absolute;
+    max-width: 300px;
+    left: 3%;
+    right: 3%;
+    top: 5%;
+  }
+  .leeson-info-goldline{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .lesson-info-wrapper{
+    width: 100%;
+  }
+  .lesson-text-img-wrapper{
+    display: block;
+
+  }
+  .lesson-info-wrapper h2{
+    font-size: 16px;
+    padding-top: 10%;
+  }
+
+  .text-list div{
+    font-size: 14px;
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text-list dd{
+    text-align: center;
+    padding-top: 3%;
+  }
+  .text-list .text-small-1{
+    font-size: 12px;
+  }
+  .text-list dt{
+    width: 100%;
+    padding-top: 8%;
+    padding-bottom: 3%;
+  }
+  .lesson-text-img-wrapper img{
+    display: none;
+  }
+}
+
+/* ------ レッスンの料金について --------- */
+
+
+#lesson-price-container{
+  max-width: 600px;
+  width: 100%;
+  background-color: #F3F5FB;
+  margin: 10% auto 10% auto;
+  outline: 1px solid #D9B855;
+  outline-offset: -20px;
+  padding-bottom: 1%;
+}
+.lesson-wrap{
+	margin-bottom: 10%;
+}
+.price-wrapper{
+  text-align: center;
+}
+
+.price-title{
+  padding: 4%;
+}
+.price-small-text{
+  font-size: 1.3rem;
+}
+.rose-icon {
+  width: 5%;
+  margin: 0 auto;
+}
+.content-salon-title-head{
+  font-size: 2.4rem;
+}
+@media ( max-width:768px ){
+  .content-salon-title-head{
+    font-size: 24px;
+  }
+  #lesson-price-container{
+    max-width: 450px;
+    width: 100%;
+  }
+  .price-title .rose-icon{
+    margin-top: 2%;
+  }
+
+}
+@media ( max-width:390px ){
+#lesson-price-container{
+  max-width: 390px;
+  width: 100%;
+  background-color: #F3F5FB;
+  margin: 20% auto 20% auto;
+  outline: 1px solid #D9B855;
+  outline-offset: -20px;
+  padding-bottom: 1%;
+}
+.content-salon-title-head{
+  font-size: 16px;
+}
+.price-small-text{
+  font-size: 12px;
+}
+.price-wrapper p{
+  font-size: 16px;
+}
+
+}
+
+/* ------ レッスン　アクセスについて --------- */
+
+.lesson-access-container{
+  max-width: 1050px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#access-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.access-illust-map{
+  width: 55%;
+
+}
+
+/* アクセスについて(タイトルとテキスト） */
+.access-text-wrapper{
+  width:calc(100% - 55% - 5% - 60px);
+  /* height: 70vw; */
+  margin:0 60px 0 5%;
+}
+.access-title span{
+  display: inline-block;
+}
+.access-title{ 
+  position: relative;
+  padding-bottom: 10%;
+  text-align: center;
+}
+.content-access-title-head{
+  font-size: 2.4rem;
+}
+.access-p{
+  font-size: 1em;
+}
+/* アクセスについて(タイトルの飾りテキスト） */
+.content-access-sign{
+  max-width: 25%;
+  position: absolute;
+  top: 67%;
+  left: 65%;
+}
+
+.access-text h2{
+  margin-top: 4%;
+  margin-bottom: 0.8rem;
+  padding: 0.3rem;
+  border-left: 10px solid #D9B855;
+  max-height: 400px;
+}
+.access-p{
+  font-size: 2rem;
+}
+.access-text p{
+  font-size: 18px;
+  padding-left: 4%;
+}
+.access-text span{
+  padding-left: 4%;
+  font-size: 12px;
+}
+.access-title .rose-icon {
+  width: 10%;
+  margin: 0 auto;
+}
+
+@media ( max-width:768px ){
+  .access-p{
+    font-size: 18px;
+  }
+  .access-text p{
+    font-size: 16px;
+  }
+  .small-text{
+    font-size: 13px;
+  }
+}
+
+@media ( max-width:550px ){
+  #access-wrapper{
+    display: block;
+  }
+  .access-illust-map{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .access-p{
+    font-size: 16px;
+  }
+  .access-text p{
+    font-size: 16px;
+  }
+  .access-text .small-text{
+    font-size: 12px;
+  }
+  .access-text-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .lesson-access-container{
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .access-title{ 
+    position: relative;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+  .access-text{
+    text-align: left;
+    margin-left: 20%;
+    margin-bottom: 5%;
+  }
+  /* アクセスについて(タイトルの飾りテキスト） */
+  .content-access-sign{
+    max-width: 15%;
+    position: absolute;
+    top: 65%;
+    left: 60%;
+  }
+  }
+
+  @media ( max-width:450px ){
+    .access-text{
+      width: 80%;
+      margin-left: 12%;
+    }
+    .content-access-title-head{
+      font-size: 16px;
+    }
+    .access-p p{
+      font-size: 12px;
+    }
+    .access-title .rose-icon{
+      width: 5%;
+    }
+    .content-access-sign{
+      max-width: 15%;
+      position: absolute;
+      top: 68%;
+      left: 60%;
+    }
+    }
+  
+
+/* ------- レッスンの流れ -------- */
+
+.slider{
+  margin: 100px auto;
+  width: 80%;
+}
+.slider img{
+  height: auto;
+  width: 100%;
+}
+
+
+/*slick setting*/
+.slick-next:before {
+  color: #000;
+}
+
+/*スライダー　ボタン */
+.slick-next{
+  right: -15px;
+}
+/* .slick-prev{ left:0; } */
+.slick-arrow{ 
+  z-index:2;
+  width: 8%;
+  height: 8%;
+}
+
+.slick-arrow:before{
+	content:""; /*デフォルトの矢印消す*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+}
+.slick-next:before{
+  background: url(../lib/slick/lesson_arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slick-arrow:before{
+  opacity:1; /*slickにデフォルトで入ってるopacity:0.75を上書き*/
+}
+
+
+
+/*スライダー　390px */
+.slider-mobile{
+  display: none;
+}
+
+
+@media ( max-width:520px ){
+  .slider{
+    display: none;
+}
+
+.slider-mobile{
+  display: block;
+}
+
+  .slider-mobile{
+    margin: 100px auto;
+    width: 80%;
+}
+
+  .slider-mobile img{
+    height: auto;
+    width: 100%;
+}
+
+
+}
+
+
+/* レッスンの流れ movie部分 */
+.lesson-movie-container{
+  width: 1440px;
+  height: 1130px;
+  background-color: #F3F5FB;
+  position: relative;
+}
+.lesson-movie-container{
+  width: 100%;
+  height: 100%;
+}
+
+.movie-wrapper{
+  text-align: center;
+  padding-top: 10%;
+  z-index: 500;
+}
+.movie-wrapper .youtube{
+  margin-bottom: 0;
+}
+.lesson-movie-title{
+  font-size: 2.4rem;
+  padding-bottom: 5%;
+}
+.salon-taiken-movie{
+  width: 80%;
+  margin: 0 auto;
+}
+.salon-taiken-movie video{
+  width: 100%;
+}
+.movie-text{
+  margin-bottom: 5%;
+}
+@media ( max-width:768px ){
+  .rose-icon2{
+    width: 5%;
+  }
+}
+
+
+.img-after{
+  width: 65%;
+  aspect-ratio: 16 / 9;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top:26.3%;
+}
+
+.youtube a:hover .img-before{
+  visibility: hidden;
+}
+
+.youtube a:hover .img-after{
+  visibility: visible;
+}
+  
+@media ( max-width:768px ){
+  .movie-text{
+    font-size: 16px;
+  }
+  .lesson-movie-title{
+    font-size: 18px;
+  }
+}
+
+
+
+/* Galleryのリンクボタン */
+.gallery-btn {
+  border: none;
+  padding: 20px 50px;
+  background: #5B7594;
+  color: #ffffff;
+}
+.gallery-btn:hover {
+  opacity: 0.7;
+}
+.gallery-button{
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 12%;
+}
+
+
+@media (max-width: 768px) {
+  .gallery-btn {
+      font-size: 16px;
+      border: none;
+      padding: 10px 25px;
+      background: #5B7594;
+      color: #ffffff;
+  }
+  .gallery-btn:hover {
+      opacity: 0.7;
+  }
+  .gallery-button{
+      text-align: center;
+  }
+}
+
+/* インスタ　タグ紹介 */
+
+.insta-tag-reserve-container{
+  position: relative;
+}
+.insta-tag-img{
+  width: 100%;
+  height: 100%;
+}
+
+.lesson-insta-tag-wrapper-mobile{
+  display: none;
+}
+
+
+@media ( max-width:600px ){
+
+.lesson-insta-tag-wrapper{
+    display: none;
+}
+
+.lesson-insta-tag-wrapper-mobile{
+  display: block;
+  margin-top: 15%;
+}
+}
+
+
+/* サロンのご予約 */
+.reserve-wrap{
+  max-width: 600px;
+}
+.content-reserve-title-head{
+  font-size: 2.4rem;
+}
+.reserve-wrap{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 150px;
+  margin-bottom: 20%;
+  width: 670px;
+  background-color: #F3F5FB;
+  outline: 1px solid #D9B855;
+  outline-offset: -20px;
+}
+
+.reserve-wrapper{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.rose-icon{
+  padding-top: 10%;
+}
+
+
+/* reservation内のリンクボタン */
+.reserve-btn {
+    border: none;
+    padding: 20px 50px;
+    background: #5B7594;
+    color: #ffffff;
+}
+.reserve-btn:hover {
+    opacity: 0.7;
+}
+.reserve-button{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+
+
+/* サロンのご予約(キャンセルに関して) */
+.accordion-004 {
+  max-width: 450px;
+  border: 1px solid #D9B855;
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.accordion-004 summary {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0.5em 1em;
+  color: #333333;
+  cursor: pointer;
+}
+.accordion-004 .cancel-red-text{
+  color: red;
+}
+.accordion-004 summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-004 summary::after {
+  transform: translateY(-25%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  margin-left: 10px;
+  border-bottom: 3px solid #333333b3;
+  border-right: 3px solid #333333b3;
+  content: '';
+  transition: transform .3s;
+}
+
+.accordion-004[open] summary::after {
+  transform: rotate(225deg);
+}
+
+.accordion-004 p {
+  transform: translateY(-10px);
+  opacity: 0;
+  margin: 0;
+  padding: .3em 2em 1.5em;
+  color: #333333;
+  transition: transform .5s, opacity .5s;
+}
+
+.accordion-004[open] p {
+  transform: none;
+  opacity: 1;
+}
+
+.contact-btn{
+  color: #5B7594;
+  text-decoration: underline;
+}
+ 
+
+.cancel-red-text {
+  font-size: 14px;
+}
+.cancel-tex{
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+  .rose-icon{
+    max-width: 400px;
+    width: 100%;
+    max-width: 30px;
+    padding-top: 10%;
+  }
+
+  .reserve-btn {
+      font-size: 16px;
+      border: none;
+      padding: 10px 25px;
+      background: #5B7594;
+      color: #ffffff;
+  }
+  .reserve-btn:hover {
+      opacity: 0.7;
+  }
+  .reserve-button{
+      text-align: center;
+      padding-top: 8%;
+      padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 750px) {
+  .reserve-wrap{
+    max-width: 500px;
+  }
+
+  .reserve-wrap{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+    margin-bottom: 15%;
+    background-color: #F3F5FB;
+    outline: 1px solid #D9B855;
+    outline-offset: -20px;
+  }
+  
+  .reserve-wrapper{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15%;
+  }
+  .rose-icon{
+    width: 80%;
+    max-width: 30px;
+    padding-top: 10%;
+  }
+
+  .reserve-btn {
+      font-size: 16px;
+      border: none;
+      padding: 10px 25px;
+      background: #5B7594;
+      color: #ffffff;
+  }
+  .accordion-004 {
+    width: 70%;
+    border: 1px solid #D9B855;
+    border-radius: 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 390px){
+  .reserve-wrapper{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  .rose-icon{
+    width: 5%;
+    padding-top: 15%;
+  }
+  .reserve-button{
+    padding-bottom: 10%;
+  }
+}

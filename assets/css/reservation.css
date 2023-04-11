@@ -1,0 +1,721 @@
+@charset "UTF-8";
+/* 文字の設定 */
+h1 {
+	color: #ffffff;
+	font-size: 9vw;
+	font-weight: 400;
+	font-family: 'Pinyon Script', cursive;
+	text-shadow: 4px 4px 4px rgba(192,192,192,.5);
+	line-height: 0;
+}
+h2 {
+	font-size: 22px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 20px;
+}
+p {
+	font-weight: 200;
+}
+.ja {
+	font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+		h1 {
+			font-size: 54px;
+		}
+		h2 {
+			font-size: 18px;
+		}
+		h3 {
+			font-size: 24px;
+		}
+		h4 {
+			font-size: 20px;
+		}
+		p,
+		.ja,
+		dt,
+		dd,
+		label,
+		a {
+			font-size: 16px;
+		}
+	}
+	@media (max-width: 390px){
+    h1 {
+			font-size: 48px;
+    }
+    h2 {
+			font-size: 16px;
+    }
+    h3 {
+			font-size: 14px;
+    }
+		h4 {
+			font-size: 14px;
+		}
+    p,
+    .ja,
+		dt,
+		dd,
+		label,
+		a {
+			font-size: 12px;
+			}
+		}
+
+/********** 薔薇のアイコン **********/
+.reservation-rose-title {
+	position: relative;
+	text-align: center;
+	margin: 0 auto 50px;
+  }
+.reservation-rose-icon {
+	width: 40%;
+	max-width: 40px;
+	margin:30px auto 20px;
+}
+.reservation-rose-title span {
+  display: block;/* display: inline-block;から変更  */
+}
+.reservation-rose-title-head a,
+.reservation-rose-title-head {
+    font-size: 24px;
+}
+@media (max-width: 768px) {
+	.reservation-rose-icon {
+		width: 30px;
+	}
+}
+@media (max-width: 390px) {
+	.reservation-rose-icon {
+		width: 24px;
+	}
+	.reservation-rose-title-head a,
+	.reservation-rose-title-head {
+		font-size: 16px;
+	}
+}
+
+/**********  薔薇の右側に1~3の数字を固定 **********/
+.reservation-rose-icon{
+	position: relative;
+}
+#i01,
+#i02,
+#i03{
+	position: absolute;
+	top: 43%;
+	left: 52%;
+}
+@media (max-width: 768px) {
+		#i01,
+		#i02,
+		#i03{
+			width: 50px;
+			top: 38%;
+			left: 54%;
+		}
+}
+@media (max-width: 390px) {
+		#i01,
+		#i02,
+		#i03{
+			width: 35px;
+			top: 40%;
+			left: 55%;
+		}
+}
+
+/************* メインビジュアル *************/
+.reservation-main-visual {
+	width: 83%;
+	margin: 10% auto 5%;
+	position: relative;
+}
+.reservation-title {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+@media (max-width: 768px) {
+	.reservation-main-visual {
+			width: 100%;
+			margin: 0 0 10%;
+		}
+	.reservation-main-visual img {
+	width: 100%;
+	height: 49vh;
+	object-fit: cover;
+	}
+	.reservation-title {
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    justify-content: flex-start;
+    align-items: end;
+	}
+	.reservation-main-visual::before {
+	content: url(../images/common/logo_with_bg.png);
+	transform: scale(0.6);
+	position: absolute;
+	top: -10px;
+	left: 0px;
+}
+	.reservation-intro-message {
+		width: 74%;
+	}
+}
+@media (max-width: 390px) {
+	.reservation-main-visual {
+	width: 100vh;
+	margin: 0;
+	margin-bottom: 45px;
+	}
+	.reservation-main-visual img {
+	height: 49vh;
+	object-fit: cover;
+	}
+	.reservation-title {
+    left: 30px;
+    bottom: 10px;
+  }
+	.reservation-main-visual::before {
+	transform: scale(0.5);
+	top: -27px;
+	left: -30px;
+}
+}
+
+/********** 共通ボタン **********/
+.reserve-btn,
+.contact-btn{
+	border: none;
+	padding:15px 50px;
+	text-align: center;
+	background: #5B7594;
+	display: inline-block;
+}
+.reserve-btn:hover,
+.contact-btn:hover {
+	opacity: 0.7;
+}
+/* reservationとcontactへのリンクボタン */
+.reserve-btn {
+	pointer-events: none;
+	color: #999;/* 無効っぽい見た目にする */
+}
+#reserve-tab1:checked ~ .reserve-btn{
+	pointer-events: auto;
+	color: #fff;/* 有効可されたっぽい見た目にする */
+}
+.contact-btn {
+	color: #ffffff;
+}
+.contact-button{
+	text-align: center;
+	padding-bottom: 12%;
+}
+
+@media (max-width: 768px) {
+		.reserve-btn,
+		.contact-btn {
+			padding:15px 30px;
+		}
+}
+@media (max-width: 390px) {
+		.reserve-btn,
+		.contact-btn {
+			padding:10px 30px;
+		}
+}
+
+/* ページ内リンク集 */
+.anchor{
+	display: block;
+	padding-top: 190px;
+	margin-top: -190px;
+}
+.reservation-nav-list{
+	width: 100%;
+	max-width: 83%;
+	margin: 0 auto 10% auto;
+	display: flex;
+	text-align: center;
+	line-height: 2rem;
+}
+.reservation-nav-list li{
+	display: flex;
+	height:3em;
+	width: 25%;
+	align-items: center;
+	border-right:black 1px solid;
+	border-left:black 1px solid;
+}
+.reservation-nav-list li+li{
+	border-left: 0;
+	border-right: 1px solid black;
+}
+.reservation-nav-list a{
+	width: 100%;
+	color: #18212B;
+	display: block;
+}
+@media (max-width: 768px){
+	.reservation-nav-list{
+		margin-bottom: 15%;
+	}
+}
+@media (max-width: 550px){
+	.reservation-nav-list{
+		margin-bottom: 25%;
+	}
+}
+@media (max-width: 390px){
+	.reservation-nav-list{
+	display: none;
+	}
+}
+
+
+/* サロン予約の流れ画像 */
+.lesson{
+  width: 70%;
+  max-width: 900px;
+	margin: 10% auto;
+}
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc {
+	display: block !important;
+}
+.sp {
+	display: none !important;
+}
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 768px) {
+		.lesson{
+			width: 100%;
+			text-align: center;
+		}
+			.pc {
+			display: none !important;
+		}
+			.sp {
+			display:inline-block !important;
+		}
+	}
+
+/* カレンダー部分 */
+.reservation-google-cal-text {
+		width: 50%;
+		margin: 0 auto 80px;
+}
+.blue-bg{
+	width: 100%;
+	background-color: #D8E9FC;
+	padding: 5%;
+	margin: 0 auto 90px;
+	text-align: center;
+}
+.google-cal iframe{
+	min-width: 300px;
+	width: 72%;
+	height: 600px;
+	margin: 0 auto;
+}
+@media all and (max-width: 768px) {
+	.reservation-google-cal-text {
+		width: 70%;
+		margin: 0 auto 50px;
+		}
+		.google-cal iframe {
+		width: 85%;
+		}
+}
+
+/* 注意事項 */
+/* for-guests */
+.for-guests-wrapper {
+	z-index: 1;
+  position: relative;
+}
+.faq-wrapper {
+	width: 70%;
+	max-width: 900px;
+	margin: 0 auto 10% auto;
+}
+.for-guests {
+	width: 70%;
+	max-width: 900px;
+	background-color: #5B7594;
+	margin: 0 auto;
+	padding: 70px 30px 0;
+	text-align: center;
+}
+.for-guests h4 {
+	font-size: 30px;
+	padding-bottom: 50px;
+	font-weight: 150;
+	color:#D9B855;
+}
+.for-guests p {
+	padding-bottom: 50px;
+	color: #FFFFFF;
+}
+.cp-actab{
+	text-align: center;
+}
+dt{
+	text-align: left;
+	border-left: 10px solid #D9B855;
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+dd{
+	text-align: left;
+	padding-left: 25px;
+	margin-bottom: 30px;
+}
+.cp-actab div,
+.cp-actab p{
+	text-align: left;
+	padding-left: 1.5rem;
+}
+.cp-qa *, .cp-qa *:after, .cp-qa *:before {
+	-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+}
+.cp-qa .cp-actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	color: #18212B;
+}
+.tab-1{
+	background-color: #D8E9FC;
+}
+.tab-2{
+	background-color: #F3F5FB;
+}
+.tab-3{
+	background-color: #FFFFFF;
+}
+.cp-qa .cp-actab input {
+	position: absolute;
+	opacity: 0;
+}
+@media (max-width: 768px){
+	.faq-wrapper{
+		width: 80%;
+	}
+	.for-guests{
+		width: 80%;
+		padding: 50px 20px 0;
+	}
+	.for-guests h4 {
+		font-size: 28px;
+	}
+	.for-guests h4,
+	.for-guests p {
+		padding-bottom: 30px;
+	}
+	dt{
+		padding-left: 7px;
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 390px){
+	.for-guests h4 {
+		font-size: 18px;
+	}
+	dt{
+		border-left: 5px solid #D9B855;
+		padding-left: 5px;
+		margin-bottom: 7px;
+	}
+	dd{
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+}
+
+/* 質問 */
+.cp-qa .cp-actab label {
+	line-height: 1.6em;
+	position: relative;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 20px 50px 20px 20px;
+	cursor: pointer;
+	text-indent: 1em;
+	border :#D9B855 1px solid;
+}
+.cp-qa .cp-actab label:hover {
+	opacity: .4;
+}
+@media (max-width: 768px){
+	.cp-qa .cp-actab label {
+		padding: 15px 30px 20px 15px;
+	}
+	.cp-qa .cp-actab label:hover {
+		opacity: 1;
+	}
+}
+@media (max-width: 390px){
+	.cp-qa .cp-actab label {
+		padding: 10px 30px 15px 15px;
+	}
+}
+
+/* --質問の矢印アイコン */
+.cp-qa .cp-actab label::after {
+  content:"";
+  display:block;
+  width:15px;
+  height:15px;
+  border-top: #18212B 1px solid;
+  border-right: #18212B 1px solid;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  position:absolute;
+  right: 5%;
+  top: 0;
+  bottom: 15%;
+  margin: auto;
+	-webkit-transition: transform 0.4s;
+	transition: transform 0.4s;
+}
+@media (max-width: 768px){
+	.cp-qa .cp-actab label::after {
+		width:10px;
+  	height:10px;
+	}
+}
+/* --答えの高さ */
+.cp-qa .cp-actab input:checked ~ .cp-actab-content {
+	max-height: 300em;
+	border-left: #D9B855 1px solid;
+	border-right: #D9B855 1px solid;
+	padding: 30px 50px;
+}
+/* 答え */
+.cp-qa .cp-actab .cp-actab-content {
+	position: relative;
+	max-height: 0;
+	padding: 0 2.5em ;
+	border: none;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+.cp-qa .cp-actab :checked ~ .cp-actab-content *{
+	-webkit-transition: 0 0.2s;
+	transition: 0 0.2s;
+}
+.cp-qa .cp-actab input:not( :checked ) ~ .cp-actab-content *{
+	margin: 0;
+	padding: 0;
+}
+.cp-qa .cp-actab .cp-actab-content p {
+	padding: 1em 0 1em;
+}
+
+/* 質問を開いた時の仕様 */
+@media (max-width: 768px){
+	.cp-qa .cp-actab input:checked ~ .cp-actab-content {
+		padding: 20px 20px;
+	}
+}
+@media (max-width: 390px){
+	.cp-qa .cp-actab input:checked ~ .cp-actab-content {
+		padding: 20px 20px;
+	}
+}
+
+/* 質問をクリックした時のアイコンの動き */
+.cp-qa .cp-actab input:checked ~ label {
+	border-bottom: none;
+}
+
+/* 質問をクリックした時の矢印アイコンの動き */
+.cp-qa .cp-actab input[type=checkbox]:checked + label::after {
+	-webkit-transform: rotateZ(315deg);
+	transform: rotateZ(315deg);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+/* 同意→予約フォームへ */
+.go-reserve-wrapper{
+	height: 80%;
+	background:linear-gradient(to bottom, #F3F5FB 0%, #F3F5FB 20%, #D8E9FC 20%,  #D8E9FC 80%, #F3F5FB 80%, #F3F5FB 100%);
+}
+.go-reserve{
+	width: 52%;
+	max-width: 900px;
+	margin: 10% auto 10%;
+	padding: 10% 3%;
+	background-color: #ffffff;
+	border: #D9B855 1px solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.go-reserve>div{
+	text-align: center;
+}
+.go-reserve input,
+.go-reserve label{
+	border-bottom: #D9B855 1px solid;
+	width: fit-content;
+	margin: 0 auto 0;
+}
+.go-reserve p{
+	margin: 10px 0 50px;
+}
+.go-reserve p::before {
+	content: "＊";
+	color: red;
+}
+@media (max-width: 950px){
+	.go-reserve{
+		width: 65%;
+	}
+}
+@media (max-width: 768px){
+		.go-reserve{
+			width: 79%;
+		}
+}
+@media (max-width: 390px){
+		.go-reserve{
+			width: 70%;
+		}
+}
+
+/* ------ アクセスについて --------- */
+.reservation-access-container{
+  width: 80%;
+  max-width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 15%;
+  position: relative;
+}
+.access-wrapper{
+  width: 100%;
+  display: flex;
+	justify-content: space-between;
+}
+.access-title span{
+	display: inline-block;
+}
+.access-title{
+	position: relative;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.access-illust-map{
+	width: 55%;
+	height: 50%;
+	margin-left: 5%;
+}
+.access-text-wrapper{
+	width:100%;
+}
+/* アクセスについて(タイトルの飾りテキスト） */
+.content-access-sign{
+  max-width: 25%;
+  position: absolute;
+  top: 85%;
+  left: 53%;
+}
+.access-text h4{
+  margin: 5px;
+  padding: 1rem;
+  border-left: 10px solid #D9B855;
+  max-height: 400px;
+}
+.access-text p{
+  padding-left: 3.5rem;
+}
+.small-text {
+  padding-left: 3.5rem;
+  font-size: 12px;
+}
+@media (max-width: 900px) {
+	.content-access-sign{
+		top: 90%;
+		left: 55%;
+	}
+}
+@media (max-width: 768px) {
+	.access-wrapper{
+		display: flex;
+		flex-direction: column-reverse;
+		}
+	.access-illust-map{
+		width: 100%;
+		height: 90%;
+		margin: 0 auto;
+	}
+	.access-text-wrapper{
+		margin-left: 3%;
+		margin-top: 7%;
+		}
+	.access-text p{
+  	padding-left: 2.5rem;
+}
+}
+@media (max-width: 390px) {
+		.small-text{
+		padding-left: 2rem;
+		font-size: 10px;
+	}
+	.access-text-wrapper{
+		margin-left: 0;
+	}
+}
+/* ------ レッスンの料金について --------- */
+.lesson-price-container{
+	max-width: 600px;
+	width: 100%;
+	background-color: #fff;
+	margin: 10% auto 10% auto;
+}
+.lesson-wrap{
+	margin-bottom: 10%;
+}
+.lesson-price-goldline{
+	text-align: center;
+	outline: 1px solid #D9B855;
+	outline-offset: -20px;
+}
+.price-wrapper{
+	padding: 20px 0 65px;
+}
+.price-title{
+	padding: 10px 0 40px;
+}
+
+/* ------ FAQ --------- */
+.reservation-faq-text {
+	text-align: center;
+	margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+	.reservation-faq-text {
+		width: 70%;
+		margin: 0 auto 50px;
+	}
+}

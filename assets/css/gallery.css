@@ -1,0 +1,648 @@
+@charset "UTF-8";
+/**************** 背景の色 ****************/
+body {
+  background-color: #ffffff;
+}
+
+/****************** 文字の設定 ******************/
+h1{
+  color: #ffffff;
+  font-size: 9vw;
+  font-weight: 400;
+  font-family: 'Pinyon Script', cursive;
+  text-shadow: 4px 4px 4px rgba(192,192,192,.5);
+  line-height: 0;
+}
+h2 {
+  font-size: 2.3vw;
+}
+h3,
+h4{
+  font-size: 24px;
+}
+p {
+  font-weight: 200;
+}
+.gallery-intro-message p {
+  font-size:18px ;
+  line-height: 3.6rem;
+  font-weight: 200;
+}
+.ja{
+  font-size: 18px;
+  font-weight: 200;
+}
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 54px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    h3,
+    h4{
+      font-size: 18px;
+    }
+    .gallery-intro-message p {
+      font-size:16px ;
+      line-height: 3.2rem;
+    }
+    p,
+    .ja {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 390px){
+    h1 {
+      font-size: 48px;
+    }
+    h2,
+    a {
+      font-size: 16px;
+    }
+    h3,
+    h4{
+      font-size: 18px;
+    }
+    .gallery-intro-message p {
+      font-size:12px ;
+      line-height: 24px;
+    }
+    p,
+    .ja {
+      font-size: 12px;
+    }
+  }
+
+/***************************** ファーストビューの部分 ****************************/
+.gallery-main-visual {
+	width: 83%;
+	margin: 10% auto 5%;
+	position: relative;
+}
+.gallery-title {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.gallery-intro {
+  text-align: center;
+}
+.gallery-intro-message {
+  width: 60%;
+  margin: 30px auto 140px;
+}
+@media (max-width: 768px) {
+    .gallery-main-visual {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 55px;
+    }
+    .gallery-main-visual img {
+    width: 100%;
+    height: 49vh;
+    object-fit: cover;
+    }
+    .gallery-title {
+      position: absolute;
+      left: 50px;
+      bottom: 10px;
+      justify-content: flex-start;
+      align-items: end;
+    }
+    .gallery-main-visual::before {
+    content: url(../images/common/logo_with_bg.png);
+    transform: scale(0.6);
+    position: absolute;
+    top: -10px;
+    left: 0px;
+	}
+    .gallery-intro-message {
+      width: 74%;
+    }
+  }
+@media (max-width: 390px) {
+    .gallery-main-visual {
+    width: 100vh;
+    margin: 0;
+    margin-bottom: 45px;
+    }
+    .gallery-title {
+    left: 30px;
+    bottom: 10px;
+  }
+    .gallery-main-visual img {
+    height: 49vh;
+    object-fit: cover;
+    }
+    .gallery-main-visual::before {
+    transform: scale(0.5);
+    top: -27px;
+    left: -30px;
+	}
+  }
+
+/***************************** バラアイコンのタイトル *******************************/
+.gallery-rose-title {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 6%;
+}
+.gallery-rose-icon {
+  width: 40px;
+  margin:0 auto 1.5vw;
+  padding: 0;
+}
+.gallery-rose-title-head span {
+  display: block;/* display: inline-block;から変更  */
+}
+@media (max-width: 768px) {
+    .gallery-rose-icon {
+      width: 30px;
+    }
+  }
+@media (max-width: 390px) {
+    .gallery-rose-icon {
+      width: 20px;
+    }
+  }
+
+/************************ スペシャルティプレートのslider *****************/
+.special-slider {
+  position: relative;
+}
+.gallery-slider-list {
+  width: 800vw;
+  display: flex;
+  position: relative;
+}
+.special-slider .gallery-slider-list li {
+  width: 50vw;
+  height: 100%;
+  /* transition: 0.3s ease-in-out; */
+}
+.gallery-slider-list li img {
+  object-fit: cover;
+  opacity: .3;
+  transition: 0.3s ease-in-out;
+}
+.arrow-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.special-slider .arrow-container li{
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 100;
+}
+.special-slider .arrow-container .prev{
+  margin-left: 10px;
+  transform: rotate(180deg);
+}
+.special-slider .arrow-container .next{
+  margin-right: 10px;
+}
+.special-slider-text h4 {
+  margin-bottom: 35px;
+}
+.special-slider-text {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.special-slider .selected img{
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.extra-slide{
+  position: absolute;
+  left: -50vw;
+}
+@media (max-width: 768px) {
+    .special-slider .arrow-container li img{
+      width: 40px;
+    }
+    .special-slider-text {
+      display: none;
+    }
+    .gallery-slider-list {
+    width: 800vw;
+    }
+    .special-slider .gallery-slider-list li {
+      width: 100vw;
+    }
+    .extra-slide {
+      position: absolute;
+      left: -100vw;
+    }
+}
+
+@media (max-width: 390px) {
+    .special-slider .arrow-container li img{
+      width: 35px;
+    }
+}
+
+/************************* シャンパンのイメージエリア *********************/
+.champagne-wrapper {
+  width: 100%;
+  /* height: auto;
+  padding-top: 75%; */
+  min-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/gallery/champagne_bg.jpg);
+  position: relative;
+  overflow: hidden;
+}
+.champagne-menu-bg {
+  width: 28%;
+  padding: 60px 30px;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 5px #ffffff;
+  outline: 1px solid #D9B855;
+	outline-offset: -15px;
+  display: flex;
+  z-index: 500;
+}
+.champagne-menu-text {
+  width: 100%;
+}
+.champagne-menu-text .rose-icon {
+  width: 10%;
+  margin-bottom: 0;
+}
+.champagne-menu-bg .rose-icon,
+.champagne-menu-bg p {
+  text-align: center;
+}
+.champagne-menu-bg p {
+  font-size: 1.2vw;
+  padding: 20px 0;
+}
+.cha-bubble {
+  z-index: 500;
+}
+.cha-bubble img {
+  border-radius: 50%;
+}
+@keyframes yurayura-y {/*丸のy軸方向のyurayuraアニメーション */
+    0% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: 5px;
+    }
+  }
+.cha-bubble-01 {
+  width: 25%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  animation: yurayura-y 1.1s ease-in-out infinite alternate;
+}
+.cha-bubble-02 {
+  width: 20%;
+  position: absolute;
+  top: 7%;
+  right: 18%;
+  animation: yurayura-y 1.7s ease-in-out infinite alternate;
+}
+.cha-bubble-03 {
+  width: 23%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  animation: yurayura-y 1.5s ease-in-out infinite alternate;
+}
+.cha-bubble-04 {
+  width: 28%;
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  animation: yurayura-y 2.0s ease-in-out infinite alternate;
+}
+.cha-bubble-05 {
+  width: 14%;
+  position: absolute;
+  top: 77%;
+  right: 35%;
+  animation: yurayura-y 1.3s ease-in-out infinite alternate;
+}
+@keyframes yurayura{
+    0%{filter: blur(5px);}
+    100%{filter: blur(1px);}
+  }
+.bubble{/*シャンパンの泡(ゴールド)のコード*/
+  width: 10px;
+  height: 10px;
+  background-color: B7902E;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  filter: blur(5px);
+  animation: yurayura 1s ease-in-out infinite alternate;
+}
+@media (max-width: 768px) {
+    .champagne-menu-bg {
+      width: 47%;
+    }
+    .champagne-menu-text .rose-icon {
+      width: 7%;
+    }
+    .champagne-menu-bg p {
+      font-size: 1.4rem;
+    }
+    .cha-bubble-01 {
+      width: 37%;
+      top: 9%;
+      left: 5%;
+    }
+    .cha-bubble-02 {
+      width: 28%;
+      top: 77%;
+      left: 55%;
+    }
+    .cha-bubble-03 {
+      width: 50%;
+      top: 57%;
+      left: 3%;
+    }
+    .cha-bubble-04 {
+      width: 25%;
+      top: 52%;
+      left: 70%;
+    }
+    .cha-bubble-05 {
+      width: 33%;
+      top: 18%;
+      left: 63%;
+    }
+  }
+@media (max-width: 550px) {
+    .champagne-menu-bg {
+      width: 60%;
+    }
+    .champagne-menu-text .rose-icon {
+      width: 8%;
+    }
+    .champagne-menu-bg p {
+      font-size: 1.4rem;
+    }
+    .cha-bubble-01 {
+      width: 37%;
+      top: 9%;
+      left: 5%;
+    }
+    .cha-bubble-02 {
+      width: 29%;
+      top: 81%;
+      left: 57%;
+    }
+    .cha-bubble-03 {
+      width: 46%;
+      top: 70%;
+      left: 3%;
+    }
+    .cha-bubble-04 {
+      width: 25%;
+      top: 64%;
+      left: 68%;
+    }
+    .cha-bubble-05 {
+      width: 30%;
+      top: 18%;
+      left: 65%;
+    }
+  }
+@media (max-width: 390px) {
+      .champagne-menu-bg {
+        width: 80%;
+        outline-offset: -10px;
+      }
+    .champagne-menu-text .rose-icon {
+      width: 9%;
+    }
+    .cha-bubble-01 {
+      width: 45%;
+      top: 8%;
+      left: 5%;
+    }
+    .cha-bubble-02 {
+      width: 32%;
+      top: 85%;
+      left: 57%;
+    }
+    .cha-bubble-03 {
+      width: 45%;
+      top: 76%;
+      left: 3%;
+    }
+    .cha-bubble-04 {
+      width: 27%;
+      top: 70%;
+      left: 68%;
+    }
+    .cha-bubble-05 {
+      width: 32%;
+      top: 17%;
+      left: 65%;
+    }
+  }
+
+/****************** Photo ギャラリー Loop ********************/
+.gallery-photo-section {
+  margin-top: 90px;
+}
+.gallery-loop-wrap {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+}
+.gallery-loop {
+  display: flex;
+}
+.gallery-loop li{
+  margin: 0 7px 7px 0;
+}
+.gallery-loop-wrap img {
+  width: auto;
+  min-width: 20vw;
+}
+@keyframes loop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc((-20vw * 6) - (10px * 6)));
+    }
+  }
+@keyframes loop2 {
+    0% {
+      transform: translateX(calc((-20vw * 6) - (10px * 6)));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.gallery-loop-row01 ul:first-child {
+  animation: loop 30s  linear infinite;
+}
+
+.gallery-loop-row02 ul:first-child {
+  animation: loop2 30s linear infinite;
+}
+
+.gallery-loop-wrap:hover ul {
+  animation-play-state: paused;
+}
+.gallery-loop img:hover {
+  opacity: .6;
+}
+.gallery-photo-text {
+  width: 45%;
+  margin: 5% 10% 5% auto;
+}
+@media (max-width: 768px) {
+    .gallery-loop li{
+      margin: 0 5px 5px 0;
+    }
+    .gallery-loop-wrap img {
+      min-width: 30vw;
+    }
+    .gallery-photo-text {
+      width: 80%;
+      margin-bottom: 50px;
+    }
+  }
+@media (max-width: 390px) {
+    .gallery-photo-section {
+      margin-top: 50px;
+    }
+    .gallery-loop li{
+      margin: 0 3px 3px 0;
+    }
+    .gallery-loop-wrap img {
+      min-width: 40vw;
+    }
+  }
+
+/**************** 教室からの景色--scenery-- ****************/
+.scenery-wrapper {
+  width: 100%;
+  height: 750px;
+  background: linear-gradient(to left bottom, rgb(238, 246, 255), rgb(255, 255, 255));
+  position: relative;
+  margin-bottom: 40px;
+}
+.scenery-title {
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.scenery-photo-01 {
+  width: 28%;
+  position: absolute;
+  top: 15%;
+  left:45%;
+}
+.scenery-photo-02 {
+  width: 17%;
+  position: absolute;
+  top: 10%;
+  left:75%;
+}
+.scenery-text {
+  width:33%;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+@media (max-width: 768px) {
+    .scenery-wrapper,
+    .scenery-title,
+    .scenery-photo-01,
+    .scenery-photo-02,
+    .scenery-text {
+      position: static;
+    }
+    .scenery-wrapper {
+      padding: 20px;
+      height: unset;
+    }
+    .scenery-title {
+      margin: 30px 0 30px 15px;
+    }
+    .scenery-photo-01 {
+      width: 70%;
+      margin: 0 0 0 auto;
+      margin-bottom: 25px;
+      padding-right: 5%;
+    }
+    .scenery-photo-02 {
+      width: 55%;
+      margin-bottom: 30px;
+    }
+    .scenery-text {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+
+/**************** レシピ動画 *******************************/
+.recipe-movie-wrap {
+  margin-top: 90px;
+}
+.recipe-lead {
+  width: 45%;
+  margin: 0 auto 50px;
+}
+.recipe-movie-wrap .youtube {
+  margin-bottom: 0;
+}
+.recipe-text {
+  width: 50%;
+  margin: 0 0 0 auto;
+  padding: 50px 0;
+  padding-right: 15%;
+}
+@media (max-width: 768px) {
+    .recipe-lead {
+      width: 65%;
+    }
+    .recipe-text {
+      padding-top: 15px;
+    }
+  }
+@media (max-width: 390px) {
+    .recipe-lead {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+    .recipe-text {
+      width: 80%;
+      margin: 0 auto;
+      padding-right: 0;
+    }
+  }

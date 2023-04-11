@@ -1,0 +1,759 @@
+@charset "UTF-8";
+
+main{
+  width: 100%;
+  overflow: hidden;
+}
+img{
+  width:100%;
+}
+
+#logo img {
+  max-width:50%;
+}
+
+/**** 文字の設定 ****/
+h1{
+  color: #ffffff;
+  font-size: 9vw;
+  font-weight: 400;
+  font-family: 'Pinyon Script', cursive;
+  text-shadow: 4px 4px 4px rgba(192,192,192,.5);
+  line-height: 0;
+}
+h2{
+  font-size: 2.3vw;
+}
+h3{
+  font-size: 24px;
+}
+.ja{
+  font-size: 18px;
+}
+
+main p{
+  font-feature-settings: "palt"1;/*文字間を自動で詰めて調整してくれる*/
+  text-align: justify;/*justifyで設定しておくと、左寄せにしてくれる*/
+  line-height: 3.6rem;
+}
+.intro-text{
+  font-size:18px ;
+  line-height: 3.6rem;
+  font-weight: 200;
+}
+@media ( max-width:1000px ){
+
+  main p{
+    font-size:18px ;
+    font-feature-settings: "palt"1;/*文字間を自動で詰めて調整してくれる*/
+    text-align: justify;/*justifyで設定しておくと、左寄せにしてくれる*/
+    line-height: 3.3rem;
+  }
+}
+@media (max-width: 798px){
+  h1 {
+    font-size: 54px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3,
+	h4{
+		font-size: 24px;
+	}
+  main p{
+    font-size:16px ;
+    font-feature-settings: "palt"1;/*文字間を自動で詰めて調整してくれる*/
+    text-align: justify;/*justifyで設定しておくと、左寄せにしてくれる*/
+    line-height: 3.2rem;
+  }
+  .w768{
+    display: block;
+  }
+  .mini{
+    display: block;
+  }
+}
+@media (max-width: 600px){
+  h2{
+    font-size: 24px;
+  }
+  h3,
+	h4{
+		font-size: 24px;
+	}
+  main p{
+    font-size:16px ;
+    font-feature-settings: "palt"1;/*文字間を自動で詰めて調整してくれる*/
+    text-align: justify;/*justifyで設定しておくと、左寄せにしてくれる*/
+    line-height: 2.8rem;
+  }
+  .prof-name{
+    font-size: 18px;
+  }
+  .w768{
+    display: block;
+  }
+    .w700{
+  display: block;
+  }
+}
+
+@media (max-width: 500px){
+  h1 {
+    font-size: 48px;
+  }
+	h2,
+	a {
+		font-size: 22px;
+	}
+	h3,
+	h4{
+		font-size: 18px;
+	}
+}
+
+/**** タイトル　****/
+.rose-icon{
+  width: 10%;
+  margin:0 auto 1.5vw;
+  padding: 0;
+}
+.rose-title{
+  position: relative;
+  text-align: center;
+  width: 35%;
+  margin: 0 auto 6%;
+}
+.rose-title span{
+  display: inline-block;
+}
+.last-message .rose-title{
+  margin: 0 auto;
+}
+.rose-title .l-gold{
+  max-width: 191px;
+}
+
+/**** ファーストビュー ****/
+.main-visual{
+	width: 83%;
+	margin: 10% auto 5%;
+	position: relative;
+}
+.title{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.about-intro{
+  width: 90%;
+  text-align: center;
+  margin: 8%;
+}
+.intro-text{
+  width: 74%;
+  margin: 5% auto 12%;
+  text-align: left;
+}
+@media (max-width: 768px) {
+	.main-visual {
+    width: 100%;
+    margin: 0 0 10%;
+	}
+	.main-visual img {
+    width: 100%;
+    height: 49vh;
+    object-fit: cover;
+	}
+	.title {
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    justify-content: flex-start;
+    align-items: end;
+	}
+  .main-visual::before {
+    content: url(../images/common/logo_with_bg.png);
+    transform: scale(0.6);
+    position: absolute;
+    top: -10px;
+    left: 0px;
+	}
+  .rose-title{
+    width: 50%;
+  }
+  .l-gold{
+    width: 10%;
+  }
+}
+
+/* メインビジュ-390pxの設定 */
+@media (max-width: 390px) {
+	.main-visual {
+    width: 100%;
+    margin: 0 auto 10%;
+	}
+	.main-visual img {
+    height: 49vh;
+    object-fit: cover;
+	}
+  .title {
+    left: 30px;
+    bottom: 10px;
+  }
+  .main-visual::before {
+    transform: scale(0.5);
+    top: -27px;
+    left: -30px;
+	}
+  .intro-text p{
+    font-size: 13px;
+    line-height: 2;
+  }
+}
+
+/**** profile ******/
+.profile{
+  width: 80%;
+  margin: 0 auto;
+}
+.prof-title{
+  padding-bottom:2.5vw;
+}
+
+/* profile-1 */
+.profile-1{
+  margin-top: 8%;
+  display: flex;
+}
+.prof1-1{
+  max-width: 740px;
+  margin-top: 8%;
+  padding-right: 6%;
+}
+.prof-name{
+  /* width: calc(100% - 39% * 35%); */
+  margin-bottom: 10%;
+}
+.prof1-text {
+  /* line-height: 36px; */
+  padding-top:1.5em;
+}
+.prof1-text span{
+  display: inline-block;
+  margin-top: 8%;
+}
+.prof1-img{
+  width: 39%;
+  height: 63%;
+}
+
+@media (max-width: 1000px){
+
+.prof1-1{
+max-width: 740px;
+margin-top: 15%;
+padding-right: 6%;
+}
+}
+
+@media (max-width: 500px){
+  .profile-1{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .prof-name,
+  .prof-title{
+    text-align: center;
+  }
+  .prof1-img{
+    width: 250px;
+    height: 380px;
+    left: 70px;
+  }
+
+.rose-title .en{
+  font-size: 18px;
+  }
+  .rose-title .ja{
+    font-size: 16px;
+  }
+}
+
+/* profile-2 */
+.profile-2{
+  margin: 12% 0 20%;
+  height: 57%;
+  display: flex;
+  justify-content: center;
+}
+
+/* prof2-1 */
+.prof2-1{
+  width: 52%;
+  margin-right: 2%;
+}
+.prof2-img{
+  height: 37vh;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.skill{
+  width: 70%;
+  padding-top: 8.7%;
+  margin: 0 auto;
+}
+
+/* prof2-2 */
+.prof2-2{
+  width: 45%;
+}
+.bcs-img{
+  width: 55%;
+  margin-bottom: 7%;
+}
+.prof2-text{
+  width: 88%;
+}
+
+/* history */
+.history{
+  width: 88%;
+  max-height: 47%;
+  margin-top: 24%;
+  padding-bottom: 3.5%;
+}
+@media ( max-width:768px ){
+  .profile-1,
+  .profile-2{
+    align-items: center;
+  }
+  .profile-2-1 {
+    margin: 0;
+  }
+  .prof2-text{
+    width: 100%;
+  }
+
+  .skill{
+    width: 100%;
+    padding: 10% 0;
+  }
+}
+
+@media (min-width: 701px){
+  .br_name{
+    display: none;
+  }
+}
+
+@media (max-width: 700px){
+  .br_name{
+    display: block;
+  }
+}
+
+@media (max-width: 500px){
+  .profile-2{
+    flex-direction:column;
+    display: block;
+  }
+  .prof2-1,
+  .prof2-2{
+    width: 100%;
+  }
+  .history{
+    margin-top: 10%;
+  }
+  /* .prof2-text{
+    font-size: 12px;
+  } */
+  .rose-title .en{
+    font-size: 18px;
+  }
+  .rose-title .ja{
+    font-size: 16px;
+  }
+  .prof1-1 h3{
+    font-size: 16px;
+  }
+  .br_name{
+    display: none;
+  }
+}
+
+
+
+
+/* feature */
+.feature{
+  width: 80%;
+  margin: 0 auto 10%;
+}
+.text-wrap span{
+  margin-top: 8%;
+  display: inline-block;
+}
+.text-wrap
+{display: contents;
+}
+
+.feature-title{
+  text-align: center;
+}
+.feature-3 .feature-title{
+  text-align: left;
+}
+
+/*****************************/
+.feature-1{
+  height: 70vh;
+  position: relative;
+  margin-bottom: 30%;
+  /*↑もし上下のコンテンツが重なってきそうだったらここのマージンの数値を大きくしてください*/
+  background-image:url(../images/about/gold_line_prof.svg);
+  background-repeat:no-repeat ;
+  background-size: auto 50vh;
+}
+.f1{
+  padding-left: 4.5%;
+  width: 75%;
+  height: 114%;
+}
+.f1-text{
+  width: 70%;
+  top: 35%;
+  right: 0px;
+  position: absolute;
+  padding: 4% 8% 4% 6%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.feature-title{
+  margin-bottom: 6%;
+}
+
+/*****************************/
+.feature-2{
+  position: relative;
+  height: 90vh;
+  margin-bottom: 30%;
+  /*↑もし上下のコンテンツが重なってきそうだったらここのマージンの数値を大きくしてください*/
+  background-image:url(../images/about/gold_line_prof.svg);
+  background-repeat:no-repeat ;
+  background-position: 100% 0%;
+  background-size: auto 50vh;
+}
+.f2{
+  padding-right: 4.5%;
+  width: 80%;
+  /* height: 23%; */
+  right: 0px;
+  position: absolute;
+}
+.f2-text{
+  width: 80%;
+  /* height: 60%; */
+  top: 38%;
+  left: 0px;
+  position: absolute;
+  padding: 4% 5% 4% 5%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*************************/
+.feature-3{
+  height: 70vh;
+  position: relative;
+  margin-bottom: 20%;
+  /*↑もし上下のコンテンツが重なってきそうだったらここのマージンの数値を大きくしてください*/
+  background-image:url(../images/about/gold_line_prof.svg);
+  background-repeat:no-repeat ;
+  background-size: auto 50vh;
+}
+.f3{
+  padding-left: 4.5%;
+  width: 90%;
+  /* height: 67%; */
+}
+.f3-text{
+  width: 75%;
+  /* height: 30%; */
+  top: 40%;
+  right:0px;
+  position: absolute;
+  padding: 4% 4% 4% 4%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*************************/
+.last-message p{
+  max-width: 822px;
+  margin: 4% auto 15%;
+  /* line-height: 36px; */
+}
+.mini{
+  display: none;
+}
+.youtube-p{
+  text-align: center;
+  padding-bottom: 3%;
+}
+  .youtube p{
+  font-size: 18px;
+}
+
+@media ( max-width:1000px){
+  .feature-2{
+  padding-top: 20%;
+  }
+  .f2-text{
+  width: 80%;
+  top: 50%;
+  }
+  .last-message{
+    margin-top: 55%;
+  }
+  .feature-3{
+    padding-top: 10%;
+  }
+  .f3-text{
+    top: 60%;
+  }
+  .w700{
+    display: block;
+  }
+  .feature-2{
+    background-image:url(../images/about/gold_line_prof.svg);
+    background-repeat:no-repeat ;
+    background-position: 100% 75%;
+    background-size: auto 60vh;
+  }
+}
+
+
+@media ( max-width:768px ){
+  .youtube p{
+    font-size: 16px;
+  }
+}
+@media ( max-width:768px ){
+  .feature-1,
+  .feature-3{
+    height: auto;
+    margin-bottom: 0;
+  }
+  .feature-2{
+    height: auto;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .feature-2 .pic-wrap{
+    text-align: right;
+  }
+  .feature-2 .f2{
+    position: static;
+
+  }
+  .f1-text {
+    width: 70%;
+    position: static;
+    margin-left: auto;
+    transform: translateY(-50px);
+}
+  .f2-text{
+    width: 80%;
+    position: static;
+    transform: translateY(-50px);
+  }
+  .feature-3{
+    padding-top: 0;
+  }
+  .f3{
+    width: 70%;
+
+  }
+
+  .f3-text{
+    position: static;
+    margin-left: auto;
+    transform: translateY(-50px);
+  }
+  .text-wrap span{
+    margin-top: 8%;
+    display: inline-block;
+  }
+  .last-message p{
+    max-width: 600px;
+  }
+  .l-gold{
+    width: 25vw;
+  }
+  /* main p{
+    font-size: 16px;
+    line-height: 1.7;
+  } */
+  .en {
+    font-size: 3.1vw;
+  }
+  .ja {
+    font-size: 2.3vw;
+  }
+  .last-message {
+    margin-top: 0;
+}
+.feature-2{
+  margin-top: 0;
+  padding-top: 0;
+  background-image:url(../images/about/gold_line_prof.svg);
+  background-repeat:no-repeat ;
+  background-position: 100% 0%;
+  background-size: auto 60vh;
+}
+.a-btn {
+  font-size: 16px;
+  border: none;
+  padding: 10px 25px;
+  background: #5B7594;
+  color: #ffffff;
+}
+}
+@media ( max-width:600px ){
+  .feature-2{
+    margin-top: 50%;
+  }
+  .f2-text{
+    top: 50%;
+  }
+  .feature-3{
+    padding-top: 20%;
+  }
+  .feature-2{
+    margin-top: 0;
+    padding-top: 0;
+    background-image:url(../images/about/gold_line_prof.svg);
+    background-repeat:no-repeat ;
+    background-position: 100% 0%;
+    background-size: auto 60vh;
+  }
+  .feature-2 .f2{
+    position: static;
+  }
+  .feature-3{
+    background-image:url(../images/about/gold_line_prof.svg);
+    background-repeat:no-repeat ;
+    background-position: 0% 30%;
+    background-size: auto 60vh;
+  }
+}
+
+
+@media ( max-width:500px ){
+
+  .feature-2{
+    padding-top: 20%;
+    margin-top: 0;
+    padding-top: 0;
+    background-image:url(../images/about/gold_line_prof.svg);
+    background-repeat:no-repeat ;
+    background-position: 100% 0%;
+    background-size: auto 60vh;
+  }
+  .feature-3{
+    position: static;
+    padding-top: 20%;
+  }
+  
+  .feature{
+    width: 90%;
+  }
+  .pic-wrap{
+  width: 100%;
+  text-align: center;
+  }
+  .f1,.f2,.f3{
+    width: 90%;
+    padding: 0;
+    /*position: static;*/
+  }
+  .f2{
+    position: relative;
+  }
+  .f1-text{
+    width: 95%;
+    position: relative;
+    margin: 5% auto;
+  }
+  .f2-text{
+    width: 95%;
+    position: static;
+    margin-top: 0;
+    transform: translateY(-50px);
+  }
+  .f3-text{
+    width: 95%;
+    position: relative;
+    margin: 5% auto;
+  }
+  .feature-3 .feature-title{
+    text-align: center;
+  }
+  .feature-title{
+    margin-bottom: 6%;
+  }
+  .last-message p{
+    width: 80%;
+  }
+
+
+  .mini{
+    display: block;
+  }
+  .mini2{
+    display: none;
+  }
+  .youtube-p{
+    font-size: 15px;
+    padding-bottom: 3%;
+  }
+
+}
+
+/* ボタンの設定（仮：角ver）*/
+.a-btn {
+  border: none;
+  padding: 2.5% 7%;
+  background: #5B7594;
+  color: #ffffff;
+}
+.a-btn:hover {
+  opacity: 0.7;
+}
+.btn{
+  padding-bottom: 7%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* MOVIEのとこ */
+.movie-wrap{
+  width:100%;
+  text-align: center;
+  padding-top: 10%;
+}
+.taiken-movie{
+  width: 80%;
+  margin: 0 auto;
+}
+.taiken-movie video{
+  width: 100%;
+  margin-bottom: 12%;
+}
+.movie-wrap .btn{
+  margin:5% auto 15%;
+}

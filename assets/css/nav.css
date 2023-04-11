@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/************** ハンバーガーボタン ******************/
+.all-wrapper {
+  overflow: hidden;
+}
+.trigger{
+  display: none;
+}
+@media ( max-width:768px ){
+  .trigger{
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1100;
+    cursor: pointer;
+  }
+  .bar{
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #5B7594;
+    border-radius: 10px;
+    position: absolute;
+    left: 5px;
+    transition: 0.4s ease-in-out;
+    transform: 0.4s 0.4s;
+  }
+  .trigger-menu {
+    font-size: 10px;
+    color: #5B7594;
+    /* color: #fff; */
+    text-transform: uppercase;
+    position: absolute;
+    left: 8px;
+    top: 32px;
+    transition: 0.4s ease-in-out;
+  }
+  .active-nav .bar {
+    background-color: #5B7594;
+    transition: 0.4s 0.4s ease-in-out;
+  }
+  .active-nav .trigger-menu {
+    color: #5B7594;
+    transition: 0.4s 0.4s ease-in-out;
+  }
+  .trigger-close {
+    opacity: 0;
+    font-size: 10px;
+    color: #5B7594;
+    text-transform: uppercase;
+    position: absolute;
+    left: 7px;
+    top: 32px;
+    transition: 0.4s ease-in-out;
+  }
+  .open .bar{
+    transition: 0.4s 0.4s ease-in-out;
+    transform: 0.4s 0.4s;
+  }
+  .bar:nth-child(1){
+    top: 0px;
+  }
+  .bar:nth-child(2){
+    top: 12px;
+  }
+  .bar:nth-child(3){
+    top: 24px;
+  }
+/***** ハンバーガーボタンがタップされた時 ******/
+.open .bar {
+  background-color: #5B7594;
+}
+.open .bar:nth-child(1){
+  top: 12px;
+  transform: rotate(135deg)
+}
+.open .bar:nth-child(2){
+  opacity: 0;/* 不透明度 */
+}
+.open .bar:nth-child(3){
+  top: 12px;
+  transform: rotate(-135deg)
+}
+.open .trigger-close {
+  opacity: 1;
+  transition: 0.4s 0.4s ease-in-out;
+}
+.open .trigger-menu {
+  opacity: 0;
+}
+}
+
+/****************** 固定のヘッダーナブ ***********************/
+
+.header{
+  background-color: #F3F5FB;
+  width: 100%;
+  height: 95px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+.header .nav-inner{
+  height: 100%;
+  padding-bottom: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-items: center;
+}
+.nav-inner{
+  width: 83%;
+  margin: 0 auto;
+}
+.header-logo{
+  width: 100px;
+  min-width: 95px;
+}
+.top-nav-logo {
+  opacity: 0;
+}
+.active-nav-logo.top-nav-logo {
+  opacity: 1;
+  transition: 0.4s 0.4s ease-in-out;
+}
+/************** ナビゲーション **************/
+.nav-list{
+  display: flex;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.nav-list a {
+  color: #18212B;
+  font-size: 1.4vw;
+  padding: 15px 20px;
+}
+.current {
+  text-decoration: underline;
+}
+.nav-list a span {
+  display: none;
+}
+.nav ul li{
+  margin: 0;
+}
+.nav-contact{
+  margin-right: 4rem;
+}
+@media ( max-width:768px ) {
+  .header {
+    height: 0;
+    top: -100px;
+    transition: all 0.4s ease-in-out;
+  }
+  .header-logo {
+    min-width: 150px;
+    padding: 10% auto;
+  }
+  .active-nav.header {
+    height: 86px;
+    top: 0;
+  }
+  .nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(216, 233, 252,0.9);
+  }
+  .nav-list{
+    position: fixed;
+    left: 0px;
+    top: 150px;
+    width: 100vw;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .nav-list a {
+    font-size: 1.6rem;
+    display: block;
+    padding-left: 15%;
+  }
+  .nav-contact{
+    margin-right: 0;
+  }
+  /************* ハンバーガーが押される前のナブ *********/
+  .nav{
+    left: -100vw;
+    transition: 0.4s ease-in-out;
+  }
+  /********* ハンバーガーが押された後のナブ *********/
+  .open .nav{
+    left: 0;
+  }
+  .nav-list{
+    left: -100%;
+    transition: 0.4s ease-in-out;
+  }
+  .nav-list li:first-child::before {
+    content: url(../images/common/logo_black.svg);
+    width: 110px;
+    position: fixed;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+    transition: 0.4s ease-in-out;
+  }
+  .open .nav-list {
+    left: 0;
+    transition: 0.4s 0.4s ease-in-out;
+  }
+  .open .nav-list a span {
+    opacity: 1;
+    display: block;
+    font-size: 1rem;
+    padding: 15px 20px 20px 0;
+    transition: 0.4s 0.4s;
+  }
+  .open .nav-list li:first-child::before {
+    top: 20px;
+    transition: 0.4s 0.4s ease-in-out;
+  }
+}

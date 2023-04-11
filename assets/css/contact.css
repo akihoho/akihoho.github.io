@@ -1,0 +1,416 @@
+@charset "UTF-8";
+/* 文字の設定 */
+h1 {
+	color: #ffffff;
+	font-size: 9vw;
+	font-weight: 400;
+	font-family: 'Pinyon Script', cursive;
+	text-shadow: 4px 4px 4px rgba(192,192,192,.5);
+	line-height: 0;
+}
+h2 {
+	font-size: 22px;
+}h3,
+h4 {
+	font-size: 2.3vw;
+}
+p {
+	font-weight: 200;
+}
+.ja{
+	font-size: 18px;
+}
+.pp a{
+	font-size: 18px;
+}
+.w80{
+	max-width: 80%;
+	margin: 0 auto 5%;
+	text-align: center;
+}
+@media screen and (max-width: 768px) {
+		h1 {
+			font-size: 54px;
+		}
+		h2,
+		a {
+			font-size: 18px;
+		}
+		h3,
+		h4{
+			font-size: 18px;
+		}
+		p,
+		.ja,
+		dt,
+		dd,
+		label,
+		.pp a,
+		li {
+			font-size: 16px;
+		}
+}
+@media (max-width: 390px){
+		h1 {
+			font-size: 48px;
+		}
+		h2{
+			font-size: 16px;
+		}
+		h3,
+		h4 {
+			font-size: 24px;
+		}
+		p,
+		.ja,
+		dt,
+		dd,
+		label,
+		li,
+		a {
+			font-size: 12px;
+		}
+}
+
+/********　薔薇のアイコン　********/
+.contact-rose-title {
+	position: relative;
+	text-align: center;
+	margin: 0 auto 6%;
+  }
+.contact-rose-icon {
+	width: 40%;
+	max-width: 40px;
+	margin:90px auto 1.5vw;
+	padding: 0;
+}
+.contact-rose-title span {
+  display: block;
+}
+@media (max-width: 768px) {
+	.contact-rose-icon {
+		width: 30px;
+	}
+}
+@media (max-width: 390px) {
+	.contact-rose-icon {
+		width: 20px;
+	}
+}
+
+/*********** ファーストビューの部分 ***********/
+.contact-main-visual {
+		width: 83%;
+		margin: 10% auto 5%;
+		position: relative;
+}
+.contact-title {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+@media (max-width: 768px) {
+	.contact-main-visual {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 55px;
+	}
+	.contact-main-visual img {
+	width: 100%;
+	height: 49vh;
+	object-fit: cover;
+	}
+	.contact-title {
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    justify-content: flex-start;
+    align-items: end;
+	}
+	.contact-title h1 {
+	position: relative;
+	}
+	.contact-main-visual::before {
+	content: url(../images/common/logo_with_bg.png);
+	transform: scale(0.6);
+	position: absolute;
+	top: -10px;
+	left: 0px;
+}
+}
+@media (max-width: 390px) {
+	.contact-main-visual {
+	width: 100vh;
+	margin: 0;
+	margin-bottom: 45px;
+	}
+	.contact-main-visual img {
+	height: 49vh;
+	object-fit: cover;
+	}
+	.contact-title {
+    left: 30px;
+    bottom: 10px;
+  }
+	.contact-main-visual::before {
+	transform: scale(0.5);
+	top: -27px;
+	left: -30px;
+}
+}
+
+/*********** コンタクト イントロ **************/
+.contact-intro {
+	width: 580px;
+	margin: 40px auto 90px;
+}
+@media (max-width: 768px) {
+		.contact-intro {
+			width: 60%;
+	}
+}
+
+/************ ページ内リンク ************/
+.contact-nav-list{
+width: 100%;
+max-width: 83%;
+margin: 5% auto 0;
+display: flex;
+text-align: center;
+justify-content: center;
+line-height: 1;
+}
+.contact-nav-list li{
+width: 40%;
+height:3em;
+display: flex;
+align-items: center;
+border-right: #18212B 1px solid;
+border-left:#18212B 1px solid;
+}
+.contact-nav-list li+li{
+border-left: 0;
+border-right: 1px solid #18212B;
+}
+.contact-nav-list a{
+width: 100%;
+color: #18212B;
+display: block;
+}
+@media (max-width: 390px){
+	.contact-nav-list{
+	display: none;
+	}
+}
+
+/*********** コンタクト フォーム ***********/
+.c-form-wrapper {
+	width: 100%;
+	background-color: #D8E9FC;
+}
+.c-form {
+	width: 55%;
+	margin: 0 auto;
+	padding: 90px 0;
+}
+.c-form-item {
+  margin-bottom: 40px;
+}
+.c-form-label{
+margin-bottom: 15px;
+}
+.c-form-input {
+	width: 100%;
+	font-size: 16px;
+	border :none;
+	padding: 15px 0;
+	border-radius: 10px;
+}
+textarea.c-form-input {
+	height: 200px;
+}
+input:focus,
+textarea:focus {
+  border: 2px solid #5B7594;
+  outline: 0;
+}
+.c-form-label:nth-of-type(2n+1)::after {
+	content: '＊';
+	color: red;
+}
+@media (max-width: 768px) {
+	.c-form {
+		width: 78%;
+	}
+	}
+/***** フォーム送信ボタン *****/
+.reserve-btn {
+	padding:15px 60px;
+	text-align: center;
+	background: #5B7594;
+	display: block;
+	margin: 40px auto 0;
+	pointer-events: none;/* 無効っぽい見た目にする */
+	color: #999;
+	cursor: pointer;
+}
+.reserve-btn:hover {
+	opacity: 0.7;
+}
+#reserve-tab1:checked ~ .reserve-btn{/* 有効可されたっぽい見た目にする */
+	pointer-events: auto;
+	color: #fff;
+}
+.privacy-wrap {
+ text-align: center;
+}
+.privacy-wrap p::before {
+	content: '＊';
+	color: red;
+}
+.privacy-wrap p{
+	margin-bottom: 2.5%;
+}
+.privacy-wrap li {
+	margin-bottom: 20px;
+}
+#reserve-tab1{
+	margin: 2.5% 0;
+}
+.pp{
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	border-bottom: solid 1px #18212B;
+	color: red;
+}
+.pp:hover{
+	opacity: 0.7;
+}
+
+/******************* FAQ ***********************/
+.faq-wrapper{
+	width: 57%;
+	margin: 90px auto 10% auto;
+}
+@media (max-width: 768px) {
+	.faq-wrapper{
+		width: 80%;
+}
+}
+.cp-qa .cp-actab {
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 1em 0;
+	color: #18212B;
+	border-radius: 10px;
+}
+.cp-qa .cp-actab input {
+	position: absolute;
+	opacity: 0;
+}
+
+/*********** 質問 ***********/
+.cp-qa .cp-actab label {
+	position: relative;
+	display: block;
+	padding: 20px 50px 30px 40px;
+	cursor: pointer;
+	background: #fff;
+}
+.cp-qa .cp-actab label::before {
+	position: absolute;
+	font-family: 'Shippori Mincho', cursive;
+	left: 20px;
+	padding-right: 20px;
+	content: 'Q';
+}
+
+/************** 質問の矢印アイコン **************/
+.cp-qa .cp-actab label::after {
+  content:"";
+  display:block;
+  width:15px;
+  height:15px;
+  border-top: #18212B 1px solid;
+  border-right: #18212B 1px solid;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  position:absolute;
+  right: 5%;
+  top: 0;
+  bottom: 15%;
+  margin: auto;
+	-webkit-transition: transform 0.4s;
+	transition: transform 0.4s;
+}
+
+/* 答え */
+.cp-qa .cp-actab .cp-actab-content {
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	padding: 0 0 0 2.5em;
+	-webkit-transition: max-height 0.4s;
+	        transition: max-height 0.4s;
+}
+.cp-qa .cp-actab .cp-actab-content::before {
+	font-family: 'Shippori Mincho', cursive;
+	/* font-size: 3.2rem; */
+	color: #D9B855;
+	position: absolute;
+	margin: 0.4em 0 0 -0.3em;
+	padding: 0;
+	content: 'A';
+}
+.cp-qa .cp-actab .cp-actab-content p {
+	margin: 2em 2em 2em 2.5em;
+	line-height: 3.2rem;
+}
+/* 質問を開いた時の仕様 */
+/* --答えの高さ */
+.cp-qa .cp-actab input:checked ~ .cp-actab-content {
+	max-height: 40em;
+}
+/* 質問をクリックした時のバーの動き */
+.cp-qa .cp-actab input:checked ~ label {
+	color: #18212B;
+	border-radius: 0.5em 0.5em 0 0;
+}
+/* 質問をクリックした時の矢印アイコンの動き */
+.cp-qa .cp-actab input[type=checkbox]:checked + label::after {
+	-webkit-transform: rotateZ(315deg);
+	transform: rotateZ(315deg);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+/*************** 問い合わせフォームへの誘導部分 ************/
+.contact-link-wrapper{
+	width: 50%;
+	margin: 70px auto;
+}
+.contact-btn {
+	padding: 15px 20px;
+	background: #5B7594;
+	color: #ffffff;
+	cursor: pointer;
+}
+.contact-btn:hover {
+	opacity: 0.7;
+}
+.contact-button{
+	text-align: center;
+	padding: 70px 0;
+}
+	@media (max-width: 768px) {
+		.contact-link-wrapper{
+			width: 60%;
+		}
+	}
