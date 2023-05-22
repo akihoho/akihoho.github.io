@@ -7,9 +7,9 @@
     //console.log(currentNav);
 
     //console.log(ref,url);
-    if(ref.indexOf(url) != -1){
-      spinner.classList.add('from-local');
-    }else{
-      spinner.classList.add('loaded');
+    if(ref.indexOf(url) == -1){
+//       spinner.classList.add('from-local');
+//     }else{
+//       spinner.classList.add('loaded');
       currentNav.classList.add('current');
     }
